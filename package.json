@@ -1,0 +1,26 @@
+{
+  "name": "dnd4e-res",
+  "version": "1.0.0",
+  "description": "Restore your characters from old .dnd4e files.",
+  "main": "index.js",
+  "scripts": {
+    "file-test": "node ./src/index.js ./testchar.dnd4e",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Kolossion/dnd4e-res.git"
+  },
+  "author": "TJ Cole",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Kolossion/dnd4e-res/issues"
+  },
+  "homepage": "https://github.com/Kolossion/dnd4e-res#readme",
+  "dependencies": {
+    "eslint": "^4.19.1",
+    "from-xml": "^0.1.6",
+    "node-sass": "^4.9.0",
+    "puppeteer": "^1.4.0"
+  }
+}
