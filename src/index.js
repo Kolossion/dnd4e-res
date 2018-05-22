@@ -5,12 +5,21 @@ const puppeteer = require('puppeteer');
 const filePath = process.argv[2];
 
 
+function replaceSpacesWithUnderscores(string) {
+  string.replace(" ", "_");
+}
+
 function buildRuleDict(rawCharacter) {
   var rulesBlob = rawCharacter.D20Character.CharacterSheet.RulesElementTally;
 
   var elements = rulesBlob.RulesElement;
+  var rulesDict = {};
 
-  console.log(rulesBlob);
+  elements.forEach( (ruleElem) => {
+    rulesDict[ruleElem["@charelem"]] = ruleElem
+  });
+
+  console.log(rulesDict);
 }
 
 function buildCharacterRecord(rawCharacter) {
@@ -21,7 +30,6 @@ function buildCharacterRecord(rawCharacter) {
     level: parseInt(char.CharacterSheet.Details.Level),
     halfLevel: Math.floor(parseInt(char.CharacterSheet.Details.Level) / 2),
   }
-
 }
 
 async function processCharHtml(charData) {
@@ -31,7 +39,7 @@ async function processCharHtml(charData) {
   const page = await browser.newPage();
   await page.setContent("<div>\"Hello World!\"</div>");
   await page.pdf(
-    { path: "./" + charData.name.toLowerCase() + ".pdf",
+    { path: "./" + replaceSpacesWithUnderscores(charData.name.toLowerCase()) + ".pdf",
       landscape: true,
       printBackground: true
     }
