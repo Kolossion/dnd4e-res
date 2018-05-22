@@ -16,10 +16,10 @@ function buildRuleDict(rawCharacter) {
   var rulesDict = {};
 
   elements.forEach( (ruleElem) => {
-    rulesDict[ruleElem["@charelem"]] = ruleElem
+    rulesDict[ruleElem["@charelem"]] = ruleElem;
   });
 
-  console.log(rulesDict);
+  return rulesDict;
 }
 
 function buildCharacterRecord(rawCharacter) {
@@ -28,7 +28,7 @@ function buildCharacterRecord(rawCharacter) {
   return {
     name: char.CharacterSheet.Details.name,
     level: parseInt(char.CharacterSheet.Details.Level),
-    halfLevel: Math.floor(parseInt(char.CharacterSheet.Details.Level) / 2),
+    // halfLevel: Math.floor(parseInt(char.CharacterSheet.Details.Level) / 2),
   }
 }
 
@@ -37,9 +37,10 @@ async function processCharHtml(charData) {
 
   const browser = await puppeteer.launch();
   const page = await browser.newPage();
+  const pdfFileName = replaceSpacesWithUnderscores(charData.name.toLowerCase());
   await page.setContent("<div>\"Hello World!\"</div>");
   await page.pdf(
-    { path: "./" + replaceSpacesWithUnderscores(charData.name.toLowerCase()) + ".pdf",
+    { path: "./" + pdfFileName + ".pdf",
       landscape: true,
       printBackground: true
     }
