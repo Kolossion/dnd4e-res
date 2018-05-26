@@ -21,6 +21,7 @@
     "eslint": "^4.19.1",
     "from-xml": "^0.1.6",
     "node-sass": "^4.9.0",
-    "puppeteer": "^1.4.0"
+    "puppeteer": "^1.4.0",
+    "ramda": "^0.25.0"
   }
 }

@@ -1,13 +1,19 @@
 const fs = require('fs');
 const fromXML = require('from-xml').fromXML;
 const puppeteer = require('puppeteer');
+const R = require('ramda');
 
 const filePath = process.argv[2];
 
+const abilityNames = [
+  "strength",
+  "dexterity",
+  "constitution",
+  "intelligence",
+  "wisdom",
+  "charisma"
+];
 
-function replaceSpacesWithUnderscores(string) {
-  string.replace(" ", "_");
-}
 
 function buildRuleDict(rawCharacter) {
   var rulesBlob = rawCharacter.D20Character.CharacterSheet.RulesElementTally;
@@ -22,14 +28,53 @@ function buildRuleDict(rawCharacter) {
   return rulesDict;
 }
 
+function getByAlias(list, aliasVal) {
+  return list.filter((item) => {
+    const aliases = item.alias;
+
+    if (Array.isArray(aliases)) {
+      return aliases.map(
+        (alias) => alias["@name"].toLowerCase() == aliasVal
+      ).reduce(R.or, false)
+      
+    } else {
+      return aliases["@name"].toLowerCase() == aliasVal;
+    }
+  });
+}
+
+function getOneByAlias(list, aliasVal) {
+  return getByAlias(list, aliasVal)[0];
+}
+
+function buildAbilityRecord(ruleDict, char) {
+
+  const record = {}
+  const stats = char.CharacterSheet.StatBlock.Stat;
+
+  abilityNames.forEach((ability) => {
+    record[ability] = {}
+    record[ability].score = +getOneByAlias(stats,ability)["@value"];
+    record[ability].modifier = +getOneByAlias(stats,ability + " modifier")["@value"];
+  });
+
+  return record
+}
+
 function buildCharacterRecord(rawCharacter) {
   const ruleDict = buildRuleDict(rawCharacter); 
   let char = rawCharacter.D20Character;
   return {
     name: char.CharacterSheet.Details.name,
     level: parseInt(char.CharacterSheet.Details.Level),
+    abilities: buildAbilityRecord(ruleDict, char),
     // halfLevel: Math.floor(parseInt(char.CharacterSheet.Details.Level) / 2),
   }
+}
+
+function generateSheetHtml(charData) {
+  // render the pug file and compile the css here.
+  return "<div>\"Hello Faerun!\"</div>"
 }
 
 async function processCharHtml(charData) {
@@ -37,8 +82,9 @@ async function processCharHtml(charData) {
 
   const browser = await puppeteer.launch();
   const page = await browser.newPage();
-  const pdfFileName = replaceSpacesWithUnderscores(charData.name.toLowerCase());
-  await page.setContent("<div>\"Hello World!\"</div>");
+  const pdfFileName = charData.name.toLowerCase().replace(" ", "_");
+  const pageContent = generateSheetHtml(charData);
+  await page.setContent(pageContent);
   await page.pdf(
     { path: "./" + pdfFileName + ".pdf",
       landscape: true,

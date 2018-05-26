@@ -62,4 +62,5 @@ typings/
 
 # outputs
 *.pdf
+.DS_Store
 package-lock.json
