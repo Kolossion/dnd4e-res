@@ -3,6 +3,7 @@ const fromXML = require('from-xml').fromXML;
 const puppeteer = require('puppeteer');
 const R = require('ramda');
 const sass = require('node-sass');
+const _ = require('lodash');
 
 const filePath = process.argv[2];
 
@@ -85,6 +86,7 @@ function buildCharacterRecord(rawCharacter) {
 }
 
 function generateSheetHtml(charData) {
+  // I may not have to include CSS since it's being auto-added
   // render the pug file and compile the css here.
   return "<div>\"Hello Faerun!\"</div>"
 }
@@ -92,13 +94,13 @@ function generateSheetHtml(charData) {
 async function processCharHtml(charData) {
   console.log(charData);
 
-  const styles = sass.renderSync({
-    file: "./src/sheet/style.scss"
-  });
+  // const styles = sass.renderSync({
+  //   file: "./src/sheet/style.scss"
+  // });
   const browser = await puppeteer.launch();
   const page = await browser.newPage();
   const pdfFileName = charData.name.toLowerCase().replace(" ", "_");
-  const pageContent = generateSheetHtml(charData, styles);
+  const pageContent = generateSheetHtml(charData);
   await page.setContent(pageContent);
   await page.pdf(
     { path: "./" + pdfFileName + ".pdf",
