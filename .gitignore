@@ -5,6 +5,10 @@ npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 
+# Compiled files
+src/sheet/char_sheet_temp.htm
+src/sheet/char_sheet.pdf
+
 # Runtime data
 pids
 *.pid
