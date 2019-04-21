@@ -2,6 +2,7 @@ const fs = require('fs');
 const fromXML = require('from-xml').fromXML;
 const puppeteer = require('puppeteer');
 const R = require('ramda');
+const sass = require('node-sass');
 
 const filePath = process.argv[2];
 
@@ -11,7 +12,7 @@ const abilityNames = [
   "constitution",
   "intelligence",
   "wisdom",
-  "charisma"
+  "charisma",
 ];
 
 
@@ -53,9 +54,12 @@ function buildAbilityRecord(ruleDict, char) {
   const stats = char.CharacterSheet.StatBlock.Stat;
 
   abilityNames.forEach((ability) => {
-    record[ability] = {}
-    record[ability].score = +getOneByAlias(stats,ability)["@value"];
-    record[ability].modifier = +getOneByAlias(stats,ability + " modifier")["@value"];
+    record[ability] = {
+      score: +getOneByAlias(stats,ability)["@value"],
+      modifier: +getOneByAlias(stats,ability + " modifier")["@value"],
+    }
+    // record[ability].score = +getOneByAlias(stats,ability)["@value"];
+    // record[ability].modifier = +getOneByAlias(stats,ability + " modifier")["@value"];
   });
 
   return record
@@ -66,6 +70,14 @@ function buildCharacterRecord(rawCharacter) {
   let char = rawCharacter.D20Character;
   return {
     name: char.CharacterSheet.Details.name,
+    player: char.CharacterSheet.Details.Player,
+    height: char.CharacterSheet.Details.Height,
+    weight: char.CharacterSheet.Details.Weight,
+    gender: char.CharacterSheet.Details.Gender,
+    age: char.CharacterSheet.Details.Age,
+    alignment: char.CharacterSheet.Details.Alignment,
+    company: char.CharacterSheet.Details.Company,
+    xp: char.CharacterSheet.Details.Experience,
     level: parseInt(char.CharacterSheet.Details.Level),
     abilities: buildAbilityRecord(ruleDict, char),
     // halfLevel: Math.floor(parseInt(char.CharacterSheet.Details.Level) / 2),
@@ -80,10 +92,13 @@ function generateSheetHtml(charData) {
 async function processCharHtml(charData) {
   console.log(charData);
 
+  const styles = sass.renderSync({
+    file: "./src/sheet/style.scss"
+  });
   const browser = await puppeteer.launch();
   const page = await browser.newPage();
   const pdfFileName = charData.name.toLowerCase().replace(" ", "_");
-  const pageContent = generateSheetHtml(charData);
+  const pageContent = generateSheetHtml(charData, styles);
   await page.setContent(pageContent);
   await page.pdf(
     { path: "./" + pdfFileName + ".pdf",
@@ -98,8 +113,9 @@ async function processCharHtml(charData) {
 async function processFileData(fileData) {
   const character = fromXML(fileData);
   const charData = buildCharacterRecord(character);
-  // const charName = character.D20Character.CharacterSheet.Details.name;
+  const charName = character.D20Character.CharacterSheet.Details.name;
   // const characterHtml = CharProcessor.process(character);
+  // console.log(characterHtml);
   await processCharHtml(charData);
 }
 
