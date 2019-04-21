@@ -1,0 +1,57 @@
+mixin info-block(title, content)
+  div.info-block
+    p= content
+    div.undertext= title
+
+mixin block-section(title)
+  div.block-section
+    h1.block-section-header= title
+    if block
+      div.block-section-body
+        block
+
+mixin defense-row(title, score, parts)
+  +simple-stat-row(title,score,parts)(class="defense dk-bg", bg="black")
+
+mixin simple-stat-row(title, score, parts)
+  div.simple-stat-row(class!=attributes.class)
+    if attributes.bg != null
+      div.color-line(style=`background-color:${attributes.bg}`)
+    div.stats
+      span
+        span.total-score= score
+        span.title= title
+      span.parts
+        each part in parts
+          if part
+            span.part
+              span.part-val= part[0]
+              span.part-title= part[1]
+          else
+            span.null-part
+    if block
+      block
+
+mixin skill-row(name, ability, score, abilityChk, isClass, trained, armorPenalty, misc)
+  tr.skill-row
+    td.score= score
+    td.name= name
+    td.ability= ability
+    td.check= abilityChk
+    td.trained
+      if trained
+        =5
+      else
+        =0
+    td.armor-penalty
+      if armorPenalty != 0
+        =armorPenalty
+      else
+        ="-"
+    td.misc= misc
+
+mixin description-block(title, description)
+  p.description-block
+    strong.title= title
+    span= " - "
+    span.description= description

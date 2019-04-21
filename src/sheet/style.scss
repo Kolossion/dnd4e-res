@@ -1,0 +1,284 @@
+@import 'http://fonts.googleapis.com/css?family=Fira+Sans';
+@import 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css';
+
+$page-width: 11in;
+$page-height: 8.5in;
+
+$page-margin: 0.1in;
+$content-width: $page-width - (2 * $page-margin);
+$content-height: $page-height - (2 * $page-margin);
+
+@page {
+  margin: $page-margin;
+  size: $page-width $page-height;
+  -relaxed-page-width: $page-width;
+  -relaxed-page-height: $page-height;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+p {
+  margin: 0;
+}
+
+.page {
+  font-family: 'Fira Sans';
+  page-break-before: always;
+  display: grid;
+  grid-template-rows: [top] auto [row1end] auto [row2end] auto [bottom];
+  grid-template-columns: [left] 1fr [col1end] 1fr [col2end] 1fr [col3end] 1fr [right];
+  grid-row-gap: 1mm;
+  grid-column-gap: 1mm;
+}
+
+header {
+  font-weight: bold;
+  display: flex;
+  justify-content: space-between;
+  padding: 1.5mm;
+  grid-column-start: left;
+  grid-column-end: right;
+  grid-row-start: top;
+  grid-row-end: row1end;
+  background-color: black;
+  color: white;
+}
+
+.char-info {
+  padding: 1.5mm;
+  // background-color: green;
+  grid-column-start: left;
+  grid-column-end: col3end;
+  grid-row-start: row1end;
+  grid-row-end: row2end;
+
+  .info-block {
+    .undertext {
+      font-size: 7pt;
+      color: gray;
+      text-align: right;
+    }
+
+    p {
+      font-size: 10pt;
+    }
+  }
+
+  .top-line {
+    margin-bottom: 0.5mm;
+  }
+
+  .top-line, .bottom-line {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.pg1-left-column {
+  grid-row-start: row2end;
+  grid-row-end: bottom;
+  grid-column-start: left;
+  grid-column-end: col1end;
+}
+
+.pg1-left-mid-column {
+  grid-row-start: row2end;
+  grid-row-end: bottom;
+  grid-column-start: col1end;
+  grid-column-end: col2end;
+}
+
+.pg1-right-mid-column {
+  grid-row-start: row2end;
+  grid-row-end: bottom;
+  grid-column-start: col2end;
+  grid-column-end: col3end;
+}
+
+.pg1-right-column {
+  grid-row-start: row1end;
+  grid-row-end: bottom;
+  grid-column-start: col3end;
+  grid-column-end: right;
+}
+
+.block-section {
+  .block-section-header {
+    margin: 0;
+    font-size: 10pt;
+    font-weight: bold;
+    text-transform: uppercase;
+    background-color: black;
+    width: 100%;
+    padding: 0.5mm;
+    color: white;
+    text-align: center;
+  }
+}
+
+.simple-stat-row {
+  font-size: 10pt;
+  margin-top: 1mm;
+  margin-bottom: 1mm;
+  position: relative;
+
+  &.dk-bg {
+    .title {
+      color: white;
+    }
+  }
+
+  .color-line {
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+    height: 14pt;
+    top: 1.4mm;
+  }
+
+  .stats {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .conditional {
+    margin-bottom: 8mm;
+    font-size: 6pt;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: gray;
+    border-bottom: 1px solid lightgray;
+  }
+
+  .total-score {
+    display: inline-block;
+    text-align: center;
+    width: 8mm;
+    border: 1px solid black;
+    padding: 1.5mm;
+    margin-right: 1mm;
+    background-color: white;
+  }
+
+  .title {
+    font-weight: bold;
+  }
+
+  .null-part {
+    width: 8mm;
+    display: inline-block;
+    padding: 1.5mm;
+    margin-left: 1mm;
+  }
+
+  .part {
+    width: 8mm;
+    display: inline-block;
+    text-align: center;
+    border: 1px solid black;
+    padding-left: 1.5mm;
+    padding-right: 1.5mm;
+    margin-left: 1mm;
+    position: relative;
+    background-color: white;
+
+    .part-title {
+      text-transform: uppercase;
+      font-size: 5pt;
+      color: gray;
+      position: absolute;
+      top: -2.5mm;
+      left: 0;
+    }
+  }
+}
+
+.simple-stat-row.defense {
+
+  .part {
+    width: 5mm;
+    padding: 0;
+    font-size: 9pt;
+    line-height: 12pt;
+    border: none;
+
+    .part-title {
+      top: -3.2mm;
+    }
+  }
+
+  .null-part {
+    width: 5mm;
+    background-color: blue;
+  }
+}
+
+.skill-table {
+  border-collapse: collapse;
+
+  .skill-table-header {
+    font-size: 6pt;
+    color: gray;
+    text-transform: uppercase;
+  }
+}
+
+.skill-row {
+  font-size: 8pt;
+
+  td {
+    padding: 0.8mm 0;
+  }
+
+  &:nth-child(odd) {
+    background-color: #eee;
+  }
+
+  .score {
+    font-weight: bold;
+  }
+
+  .ability {
+    text-transform: uppercase;
+    font-size: 6pt;
+  }
+
+  .score,
+  .check,
+  .trained,
+  .armor-penalty,
+  .misc {
+    text-align: center;
+  }
+
+  .skill-check {
+    display: inline-block;
+    padding: 0 2mm;
+    border-bottom: 1px solid black;
+    margin-right: 2mm;
+    text-align: center;
+    font-weight: bold;
+  }
+}
+
+.text-container {
+  padding: 1mm 2mm;
+}
+
+.normal-text {
+  font-size: 8pt;
+}
+
+.description-block {
+  font-size: 8pt;
+  text-indent: 5mm hanging;
+  padding-left: 3.5mm; 
+  margin-top: 1mm;
+} 
+
+.description-block:first-letter {
+  margin-left: -3mm;
+}

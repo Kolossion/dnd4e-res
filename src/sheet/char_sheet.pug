@@ -1,0 +1,149 @@
+include utils.pug
+
+body
+  div.page
+
+    header 
+      span Dungeons & Dragons 4E 
+        i Restoration
+      span Player: TJ Cole
+      
+    section.char-info
+      div.top-line
+        +info-block("Character Name", "Ander Didier")
+        +info-block("Level", "30")
+        +info-block("XP", "1,000,000")
+        +info-block("Class / Path / Destiny", "Sorcerer / Wild Mage / Deadly Trickster")
+        +info-block("Background", "A Cool Dude")
+
+      div.bottom-line
+        +info-block("Race", "Halfling")
+        +info-block("Size", "Small")
+        +info-block("Age", "24")
+        +info-block("Gender", "Male")
+        +info-block("Height", "4\'0\"")
+        +info-block("Weight", "80")
+        +info-block("Alignment", "Unaligned")
+        +info-block("Deity", "Tymora")
+        +info-block("Affiliation", "With Extra Chimney")
+
+    section.pg1-left-column
+      +block-section("Initiative")
+        +simple-stat-row(
+          "Initiative",
+          24,
+          [ [7, "Dex"], [15, "Lvl/2"], null, [0, "Misc"] ]
+        )
+          div.conditional Conditional Modifiers
+
+      +block-section("Ability Scores")
+        +simple-stat-row(
+          "Strength (Str)",
+          10,
+          [ [0, "Mod"], null, [15, "Check"] ]
+        )(bg="lightgray")
+        +simple-stat-row(
+          "Constitution (Con)",
+          16,
+          [ [3, "Mod"], null, [18, "Check"] ],
+          "lightgray"
+        )(bg="lightgray")
+        +simple-stat-row(
+          "Dexterity (Dex)",
+          24,
+          [ [7, "Mod"], null, [23, "Check"] ],
+          "lightgray"
+        )(bg="lightgray")
+        +simple-stat-row(
+          "Intelligence (Int)",
+          12,
+          [ [1, "Mod"], null, [16, "Check"] ],
+          "lightgray"
+        )(bg="lightgray")
+        +simple-stat-row(
+          "Wisdom (Wis)",
+          15,
+          [ [2, "Mod"], null, [17, "Check"] ],
+          "lightgray"
+        )(bg="lightgray")
+        +simple-stat-row(
+          "Charisma (Cha)",
+          24,
+          [ [7, "Mod"], null, [23, "Check"] ],
+          "lightgray"
+        )(bg="lightgray")
+
+      +block-section("Skills")
+        table.skill-table(width="100%")
+          tr.skill-table-header
+            th Bonus
+            th Name
+            th Abil
+            th Check
+            th Trn
+            th APen
+            th Misc
+          +skill-row("Acrobatics", "Dex", 24, 22, false, false, 0, 2)
+          +skill-row("Arcana", "Int", 21, 16, false, true, 0, 0)
+          +skill-row("Athletics", "Str", 15, 15, false, false, 0, 0)
+          +skill-row("Bluff", "Cha", 28, 23, false, true, 0, 0)
+          +skill-row("Diplomacy", "Cha", 23, 23, false, false, 0, 0)
+          +skill-row("Dungeoneering", "Wis", 17, 17, false, false, 0, 0)
+          +skill-row("Endurance", "Con", 18, 18, false, false, 0, 0)
+          +skill-row("Heal", "Wis", 17, 17, false, false, 0, 0)
+          +skill-row("History", "Int", 16, 16, false, false, 0, 0)
+          +skill-row("Insight", "Wis", 22, 17, false, true, 0, 0)
+          +skill-row("Intimidate", "Cha", 28, 23, false, true, 0, 0)
+          +skill-row("Nature", "Wis", 17, 17, false, false, 0, 0)
+          +skill-row("Perception", "Wis", 17, 17, false, false, 0, 0)
+          +skill-row("Religion", "Int", 16, 22, false, false, 0, 0)
+          +skill-row("Stealth", "Dex", 22, 22, false, false, 0, 0)
+          +skill-row("Streetwise", "Cha", 23, 23, false, false, 0, 0)
+          +skill-row("Thievery", "Dex", 24, 22, false, false, 0, 2)
+    
+    section.pg1-left-mid-column
+      +block-section("Defenses")
+        +defense-row(
+          "AC",
+          35,
+          [ [10, ""], [15, "Lvl/2"],[7, "Ar/Ab"],[0, "Cls"],[2, "Feat"],[1, "Enh"],[0, "Misc"],[0, "Misc"] ]
+          )
+        +defense-row(
+          "Fort",
+          36,
+          [ [10, ""], [15, "Lvl/2"],[3, "Ar/Ab"],[0, "Cls"],[2, "Feat"],[2, "Enh"],[0, "Misc"],[4, "Misc"] ]
+          )
+        +defense-row(
+          "Ref",
+          36,
+          [ [10, ""], [15, "Lvl/2"],[7, "Ar/Ab"],[0, "Cls"],[2, "Feat"],[2, "Enh"],[0, "Misc"],[0, "Misc"] ]
+          )
+        +defense-row(
+          "Will",
+          39,
+          [ [10, ""], [15, "Lvl/2"],[8, "Ar/Ab"],[2, "Cls"],[2, "Feat"],[1, "Enh"],[0, "Misc"],[0, "Misc"] ]
+          )
+      +block-section("Special Abilities")
+        +description-block("Test", "+5 to saving throws against fear")
+
+    section.pg1-right-mid-column
+      +block-section("Languages")
+        div.text-container
+          p.normal-text= "Common, Primordial"
+      +block-section("Feats")
+
+    section.pg1-right-column
+      +block-section("Movement")
+        +simple-stat-row(
+          "Speed",
+          6,
+          [ [6, "Base"], [0, "Armor"], [0, "Item"], [0, "Misc"] ]
+        )
+          div.conditional Conditional Modifiers
+      +block-section("Attack Workspace")
+      +block-section("Damage Workspace")
+      +block-section("Weapons")
+      +block-section("Hit Points")
+
+style
+  include:scss style.scss

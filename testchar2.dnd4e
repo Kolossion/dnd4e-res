@@ -1,0 +1,2229 @@
+﻿<D20Character game-system="D&amp;D4E" Version="0.07a" legality="rules-legal" >
+   <!--
+      Dungeons and Dragons Insider: Character Builder character save file
+   -->
+
+
+   <!--
+      This section provides computed data for applications
+      without access to the rules engine and rules data.
+   -->
+   <CharacterSheet>
+
+
+      <Details>
+         <name> Arjhan </name>
+         <Level> 30 </Level>
+         <Player>  </Player>
+         <Height> 6&apos;2&quot; </Height>
+         <Weight> 250 </Weight>
+         <Gender>  </Gender>
+         <Age> 22 </Age>
+         <Alignment>  </Alignment>
+         <Company>  </Company>
+         <Portrait>  </Portrait>
+         <Experience> 1000000 </Experience>
+         <CarriedMoney> 100 gp </CarriedMoney>
+         <StoredMoney> 0 gp </StoredMoney>
+         <Traits>  </Traits>
+         <Appearance>  </Appearance>
+         <Companions>  </Companions>
+         <Notes>  </Notes>
+      </Details>
+
+      <!--
+         Base ability scores (see stats of same name for final adjusted score)
+      -->
+      <AbilityScores legality="rules-legal" >
+         <Strength score="18" />
+         <Constitution score="14" />
+         <Dexterity score="10" />
+         <Intelligence score="10" />
+         <Wisdom score="11" />
+         <Charisma score="8" />
+      </AbilityScores>
+
+
+      <!--
+         Final computed stat values - the various numbers
+         on the character sheet are here along with behind the scenes
+         values to build them.
+      -->
+      <StatBlock>
+         <Stat value="28" >
+            <alias name="Strength" />
+            <alias name="str" />
+            <statadd value="18" />
+            <statadd Level="1" value="2" charelem="27100aa0" />
+            <statadd Level="4" value="1" charelem="2711ee80" />
+            <statadd Level="8" value="1" charelem="2712b768" />
+            <statadd Level="11" value="1" charelem="271328c8" />
+            <statadd Level="14" value="1" charelem="2712f6e8" />
+            <statadd Level="18" value="1" charelem="27111988" />
+            <statadd Level="21" value="1" charelem="2711cee0" />
+            <statadd Level="24" value="1" charelem="27127fe8" />
+            <statadd Level="28" value="1" charelem="2710a608" />
+         </Stat>
+
+         <Stat value="22" >
+            <alias name="Constitution" />
+            <alias name="con" />
+            <statadd value="14" />
+            <statadd Level="4" value="1" charelem="270f6660" />
+            <statadd Level="8" value="1" charelem="2712bfe8" />
+            <statadd Level="11" value="1" charelem="271328c8" />
+            <statadd Level="14" value="1" charelem="27131490" />
+            <statadd Level="18" value="1" charelem="271220a8" />
+            <statadd Level="21" value="1" charelem="2711cee0" />
+            <statadd Level="24" value="1" charelem="2710fb60" />
+            <statadd Level="28" value="1" charelem="271156b8" />
+         </Stat>
+
+         <Stat value="12" >
+            <alias name="Dexterity" />
+            <alias name="dex" />
+            <statadd value="10" />
+            <statadd Level="11" value="1" charelem="271328c8" />
+            <statadd Level="21" value="1" charelem="2711cee0" />
+         </Stat>
+
+         <Stat value="12" >
+            <alias name="Intelligence" />
+            <alias name="int" />
+            <statadd value="10" />
+            <statadd Level="11" value="1" charelem="271328c8" />
+            <statadd Level="21" value="1" charelem="2711cee0" />
+         </Stat>
+
+         <Stat value="13" >
+            <alias name="Wisdom" />
+            <alias name="wis" />
+            <statadd value="11" />
+            <statadd Level="11" value="1" charelem="271328c8" />
+            <statadd Level="21" value="1" charelem="2711cee0" />
+         </Stat>
+
+         <Stat value="12" >
+            <alias name="Charisma" />
+            <alias name="cha" />
+            <statadd value="8" />
+            <statadd Level="1" value="2" charelem="270dbfa8" />
+            <statadd Level="11" value="1" charelem="271328c8" />
+            <statadd Level="21" value="1" charelem="2711cee0" />
+         </Stat>
+
+         <Stat value="9" >
+            <alias name="Strength modifier" />
+            <statadd Level="1" value="1" statlink="Strength" abilmod="true" charelem="27124ec0" />
+         </Stat>
+
+         <Stat value="1" >
+            <alias name="Dexterity modifier" />
+            <statadd Level="1" value="1" statlink="Dexterity" abilmod="true" charelem="27124ec0" />
+         </Stat>
+
+         <Stat value="6" >
+            <alias name="Constitution modifier" />
+            <statadd Level="1" value="1" statlink="Constitution" abilmod="true" charelem="27124ec0" />
+         </Stat>
+
+         <Stat value="1" >
+            <alias name="Intelligence modifier" />
+            <statadd Level="1" value="1" statlink="Intelligence" abilmod="true" charelem="27124ec0" />
+         </Stat>
+
+         <Stat value="1" >
+            <alias name="Wisdom modifier" />
+            <statadd Level="1" value="1" statlink="Wisdom" abilmod="true" charelem="27124ec0" />
+         </Stat>
+
+         <Stat value="1" >
+            <alias name="Charisma modifier" />
+            <statadd Level="1" value="1" statlink="Charisma" abilmod="true" charelem="27124ec0" />
+         </Stat>
+
+         <Stat value="26" >
+            <alias name="AC" />
+            <alias name="Armor Class" />
+            <statadd Level="1" value="10" charelem="27124ec0" />
+            <statadd Level="1" requires="!Companion Class" value="1" statlink="HALF-LEVEL" charelem="27124ec0" />
+            <statadd Level="1" requires="Companion Class" value="1" statlink="Level" charelem="27124ec0" />
+            <statadd type="Class" Level="1" requires="Companion Class" value="1" statlink="AC Defense Class Bonus" charelem="27124ec0" />
+            <statadd type="Ability" Level="1" requires="!Companion Class" not-wearing="armor:heavy" value="1" statlink="Dexterity" abilmod="true" charelem="27124ec0" />
+            <statadd type="Ability" Level="1" requires="!Companion Class" not-wearing="armor:heavy" value="1" statlink="Intelligence" abilmod="true" charelem="27124ec0" />
+            <statadd type="Defensive" Level="1" wearing="DEFENSIVE:" value="1" charelem="27124ec0" />
+            <statadd type="Feat" Level="30" conditional="against charge attacks" value="2" charelem="27129c00" />
+         </Stat>
+
+         <Stat value="36" >
+            <alias name="Fortitude Defense" />
+            <alias name="Fortitude" />
+            <statadd Level="1" value="10" charelem="27124ec0" />
+            <statadd Level="1" requires="!Companion Class" value="1" statlink="HALF-LEVEL" charelem="27124ec0" />
+            <statadd Level="1" requires="Companion Class" value="1" statlink="Level" charelem="27124ec0" />
+            <statadd type="Ability" Level="1" requires="!Companion Class" value="1" statlink="Strength" abilmod="true" charelem="27124ec0" />
+            <statadd type="Ability" Level="1" requires="!Companion Class" value="1" statlink="Constitution" abilmod="true" charelem="27124ec0" />
+            <statadd type="Class" Level="1" value="1" statlink="Fortitude Defense Class Bonus" charelem="27124ec0" />
+            <statadd type="Feat" Level="30" conditional="against charge attacks" value="2" charelem="27129c00" />
+         </Stat>
+
+         <Stat value="26" >
+            <alias name="Reflex Defense" />
+            <alias name="Reflex" />
+            <statadd Level="1" value="10" charelem="27124ec0" />
+            <statadd Level="1" requires="!Companion Class" value="1" statlink="HALF-LEVEL" charelem="27124ec0" />
+            <statadd Level="1" requires="Companion Class" value="1" statlink="Level" charelem="27124ec0" />
+            <statadd type="Ability" Level="1" requires="!Companion Class" value="1" statlink="Dexterity" abilmod="true" charelem="27124ec0" />
+            <statadd type="Ability" Level="1" requires="!Companion Class" value="1" statlink="Intelligence" abilmod="true" charelem="27124ec0" />
+            <statadd type="Class" Level="1" value="1" statlink="Reflex Defense Class Bonus" charelem="27124ec0" />
+            <statadd type="Feat" Level="30" conditional="against charge attacks" value="2" charelem="27129c00" />
+         </Stat>
+
+         <Stat value="26" >
+            <alias name="Will Defense" />
+            <alias name="Will" />
+            <statadd Level="1" value="10" charelem="27124ec0" />
+            <statadd Level="1" requires="!Companion Class" value="1" statlink="HALF-LEVEL" charelem="27124ec0" />
+            <statadd Level="1" requires="Companion Class" value="1" statlink="Level" charelem="27124ec0" />
+            <statadd type="Ability" Level="1" requires="!Companion Class" value="1" statlink="Wisdom" abilmod="true" charelem="27124ec0" />
+            <statadd type="Ability" Level="1" requires="!Companion Class" value="1" statlink="Charisma" abilmod="true" charelem="27124ec0" />
+            <statadd type="Class" Level="1" value="1" statlink="Will Defense Class Bonus" charelem="27124ec0" />
+            <statadd type="Feat" Level="30" conditional="against charge attacks" value="2" charelem="27129c00" />
+         </Stat>
+
+         <Stat value="3" >
+            <alias name="Death Saves Count" />
+            <statadd Level="1" value="3" charelem="27124ec0" />
+         </Stat>
+
+         <Stat value="30" >
+            <alias name="Level" />
+            <statadd Level="1" value="1" charelem="27124ec0" />
+            <statadd Level="2" value="1" charelem="27121b70" />
+            <statadd Level="3" value="1" charelem="27109e88" />
+            <statadd Level="4" value="1" charelem="27104ba0" />
+            <statadd Level="5" value="1" charelem="271049b8" />
+            <statadd Level="6" value="1" charelem="27114f30" />
+            <statadd Level="7" value="1" charelem="27102d28" />
+            <statadd Level="8" value="1" charelem="2711e380" />
+            <statadd Level="9" value="1" charelem="271118e0" />
+            <statadd Level="10" value="1" charelem="270dcbf0" />
+            <statadd Level="11" value="1" charelem="271328c8" />
+            <statadd Level="12" value="1" charelem="2710ff80" />
+            <statadd Level="13" value="1" charelem="27130f80" />
+            <statadd Level="14" value="1" charelem="27113530" />
+            <statadd Level="15" value="1" charelem="2712f1a8" />
+            <statadd Level="16" value="1" charelem="271145e8" />
+            <statadd Level="17" value="1" charelem="2710dd98" />
+            <statadd Level="18" value="1" charelem="2710c6d8" />
+            <statadd Level="19" value="1" charelem="271225e0" />
+            <statadd Level="20" value="1" charelem="27115a08" />
+            <statadd Level="21" value="1" charelem="2711cee0" />
+            <statadd Level="22" value="1" charelem="2712d830" />
+            <statadd Level="23" value="1" charelem="2710ba78" />
+            <statadd Level="24" value="1" charelem="271293e0" />
+            <statadd Level="25" value="1" charelem="27129ca8" />
+            <statadd Level="26" value="1" charelem="27132970" />
+            <statadd Level="27" value="1" charelem="271270d0" />
+            <statadd Level="28" value="1" charelem="27127240" />
+            <statadd Level="29" value="1" charelem="27122e20" />
+            <statadd Level="30" value="1" charelem="2712c420" />
+         </Stat>
+
+         <Stat value="226" >
+            <alias name="Hit Points" />
+            <statadd type="Level 1" Level="1" value="1" statlink="Constitution" charelem="27124ec0" />
+            <statadd Level="1" value="1" statlink="_LEVEL-ONE-HPS" charelem="27124ec0" />
+            <statadd Level="2" value="1" statlink="_PER-LEVEL-HPS" charelem="27121b70" />
+            <statadd Level="3" value="1" statlink="_PER-LEVEL-HPS" charelem="27109e88" />
+            <statadd Level="4" value="1" statlink="_PER-LEVEL-HPS" charelem="27104ba0" />
+            <statadd Level="4" value="1" statlink="Toughness" charelem="271005e8" />
+            <statadd Level="5" value="1" statlink="_PER-LEVEL-HPS" charelem="271049b8" />
+            <statadd Level="6" value="1" statlink="_PER-LEVEL-HPS" charelem="27114f30" />
+            <statadd Level="7" value="1" statlink="_PER-LEVEL-HPS" charelem="27102d28" />
+            <statadd Level="8" value="1" statlink="_PER-LEVEL-HPS" charelem="2711e380" />
+            <statadd Level="9" value="1" statlink="_PER-LEVEL-HPS" charelem="271118e0" />
+            <statadd Level="10" value="1" statlink="_PER-LEVEL-HPS" charelem="270dcbf0" />
+            <statadd Level="11" value="1" statlink="_PER-LEVEL-HPS" charelem="271328c8" />
+            <statadd Level="12" value="1" statlink="_PER-LEVEL-HPS" charelem="2710ff80" />
+            <statadd Level="13" value="1" statlink="_PER-LEVEL-HPS" charelem="27130f80" />
+            <statadd Level="14" value="1" statlink="_PER-LEVEL-HPS" charelem="27113530" />
+            <statadd Level="15" value="1" statlink="_PER-LEVEL-HPS" charelem="2712f1a8" />
+            <statadd Level="16" value="1" statlink="_PER-LEVEL-HPS" charelem="271145e8" />
+            <statadd Level="17" value="1" statlink="_PER-LEVEL-HPS" charelem="2710dd98" />
+            <statadd Level="18" value="1" statlink="_PER-LEVEL-HPS" charelem="2710c6d8" />
+            <statadd Level="19" value="1" statlink="_PER-LEVEL-HPS" charelem="271225e0" />
+            <statadd Level="20" value="1" statlink="_PER-LEVEL-HPS" charelem="27115a08" />
+            <statadd Level="21" value="1" statlink="_PER-LEVEL-HPS" charelem="2711cee0" />
+            <statadd Level="22" value="1" statlink="_PER-LEVEL-HPS" charelem="2712d830" />
+            <statadd Level="23" value="1" statlink="_PER-LEVEL-HPS" charelem="2710ba78" />
+            <statadd Level="24" value="1" statlink="_PER-LEVEL-HPS" charelem="271293e0" />
+            <statadd Level="25" value="1" statlink="_PER-LEVEL-HPS" charelem="27129ca8" />
+            <statadd Level="26" value="1" statlink="_PER-LEVEL-HPS" charelem="27132970" />
+            <statadd Level="27" value="1" statlink="_PER-LEVEL-HPS" charelem="271270d0" />
+            <statadd Level="28" value="1" statlink="_PER-LEVEL-HPS" charelem="27127240" />
+            <statadd Level="29" value="1" statlink="_PER-LEVEL-HPS" charelem="27122e20" />
+            <statadd Level="30" value="1" statlink="_PER-LEVEL-HPS" charelem="2712c420" />
+         </Stat>
+
+         <Stat value="15" >
+            <alias name="_LEVEL-ONE-HPS" />
+            <statadd Level="1" value="15" charelem="271045d8" />
+         </Stat>
+
+         <Stat value="15" >
+            <alias name="Healing Surges" />
+            <statadd type="Level 1" Level="1" value="1" statlink="Constitution" abilmod="true" charelem="27124ec0" />
+            <statadd Level="1" value="9" charelem="271045d8" />
+         </Stat>
+
+         <Stat value="15" >
+            <alias name="HALF-LEVEL" />
+            <statadd Level="2" value="1" charelem="27121b70" />
+            <statadd Level="4" value="1" charelem="27104ba0" />
+            <statadd Level="6" value="1" charelem="27114f30" />
+            <statadd Level="8" value="1" charelem="2711e380" />
+            <statadd Level="10" value="1" charelem="270dcbf0" />
+            <statadd Level="12" value="1" charelem="2710ff80" />
+            <statadd Level="14" value="1" charelem="27113530" />
+            <statadd Level="16" value="1" charelem="271145e8" />
+            <statadd Level="18" value="1" charelem="2710c6d8" />
+            <statadd Level="20" value="1" charelem="27115a08" />
+            <statadd Level="22" value="1" charelem="2712d830" />
+            <statadd Level="24" value="1" charelem="271293e0" />
+            <statadd Level="26" value="1" charelem="27132970" />
+            <statadd Level="28" value="1" charelem="27127240" />
+            <statadd Level="30" value="1" charelem="2712c420" />
+         </Stat>
+
+         <Stat value="2" >
+            <alias name="Fortitude Defense Class Bonus" />
+            <statadd Level="1" value="2" charelem="271045d8" />
+         </Stat>
+
+         <Stat value="0" >
+            <alias name="Reflex Defense Class Bonus" />
+         </Stat>
+
+         <Stat value="0" >
+            <alias name="Will Defense Class Bonus" />
+         </Stat>
+
+         <Stat value="0" >
+            <alias name="AC Defense Class Bonus" />
+         </Stat>
+
+         <Stat value="16" >
+            <alias name="Initiative" />
+            <statadd Level="1" value="1" statlink="HALF-LEVEL" charelem="27124ec0" />
+            <statadd type="Ability" Level="1" value="1" statlink="Dexterity" abilmod="true" charelem="27124ec0" />
+            <statadd Level="1" value="1" statlink="Initiative Misc" charelem="27124ec0" />
+         </Stat>
+
+         <Stat value="0" >
+            <alias name="Initiative Misc" />
+         </Stat>
+
+         <Stat value="2" >
+            <alias name="Ring Slots" />
+            <statadd Level="1" value="2" charelem="27124ec0" />
+         </Stat>
+
+         <Stat value="1" >
+            <alias name="_BaseActionPoints" />
+            <statadd Level="1" value="1" charelem="27124ec0" />
+         </Stat>
+
+         <Stat value="0" >
+            <alias name="XP Needed" />
+            <statadd Level="1" value="1000" charelem="27124ec0" />
+            <statadd Level="2" value="1250" charelem="27121b70" />
+            <statadd Level="3" value="1500" charelem="27109e88" />
+            <statadd Level="4" value="1750" charelem="27104ba0" />
+            <statadd Level="5" value="2000" charelem="271049b8" />
+            <statadd Level="6" value="2500" charelem="27114f30" />
+            <statadd Level="7" value="3000" charelem="27102d28" />
+            <statadd Level="8" value="3500" charelem="2711e380" />
+            <statadd Level="9" value="4000" charelem="271118e0" />
+            <statadd Level="10" value="5500" charelem="270dcbf0" />
+            <statadd Level="11" value="6000" charelem="271328c8" />
+            <statadd Level="12" value="7000" charelem="2710ff80" />
+            <statadd Level="13" value="8000" charelem="27130f80" />
+            <statadd Level="14" value="10000" charelem="27113530" />
+            <statadd Level="15" value="12000" charelem="2712f1a8" />
+            <statadd Level="16" value="14000" charelem="271145e8" />
+            <statadd Level="17" value="16000" charelem="2710dd98" />
+            <statadd Level="18" value="20000" charelem="2710c6d8" />
+            <statadd Level="19" value="24000" charelem="271225e0" />
+            <statadd Level="20" value="32000" charelem="27115a08" />
+            <statadd Level="21" value="35000" charelem="2711cee0" />
+            <statadd Level="22" value="45000" charelem="2712d830" />
+            <statadd Level="23" value="55000" charelem="2710ba78" />
+            <statadd Level="24" value="65000" charelem="271293e0" />
+            <statadd Level="25" value="75000" charelem="27129ca8" />
+            <statadd Level="26" value="100000" charelem="27132970" />
+            <statadd Level="27" value="125000" charelem="271270d0" />
+            <statadd Level="28" value="150000" charelem="27127240" />
+            <statadd Level="29" value="175000" charelem="27122e20" />
+            <statadd Level="30" value="0" charelem="2712c420" />
+         </Stat>
+
+         <Stat value="0" >
+            <alias name="PowersAsClass" />
+            <statadd String="ID_FMP_CLASS_0" Level="1" value="0" />
+         </Stat>
+
+         <Stat value="16" >
+            <alias name="Acrobatics" />
+            <statadd Level="1" value="1" statlink="HALF-LEVEL" charelem="27121188" />
+            <statadd type="Ability" Level="1" value="1" statlink="Dexterity" abilmod="true" charelem="27121188" />
+            <statadd Level="1" value="1" statlink="Acrobatics Trained" charelem="27121188" />
+            <statadd Level="1" value="1" statlink="Acrobatics Misc" charelem="27121188" />
+            <statadd type="Armor Penalty" Level="1" value="1" statlink="Armor Penalty" charelem="27121188" />
+         </Stat>
+
+         <Stat value="0" >
+            <alias name="Acrobatics Trained" />
+         </Stat>
+
+         <Stat value="0" >
+            <alias name="Acrobatics Misc" />
+         </Stat>
+
+         <Stat value="0" >
+            <alias name="Armor Penalty" />
+         </Stat>
+
+         <Stat value="16" >
+            <alias name="Arcana" />
+            <statadd Level="1" value="1" statlink="HALF-LEVEL" charelem="27121188" />
+            <statadd type="Ability" Level="1" value="1" statlink="Intelligence" abilmod="true" charelem="27121188" />
+            <statadd Level="1" value="1" statlink="Arcana Trained" charelem="27121188" />
+            <statadd Level="1" value="1" statlink="Arcana Misc" charelem="27121188" />
+         </Stat>
+
+         <Stat value="0" >
+            <alias name="Arcana Trained" />
+         </Stat>
+
+         <Stat value="0" >
+            <alias name="Arcana Misc" />
+         </Stat>
+
+         <Stat value="18" >
+            <alias name="Bluff" />
+            <statadd Level="1" value="1" statlink="HALF-LEVEL" charelem="27121188" />
+            <statadd type="Ability" Level="1" value="1" statlink="Charisma" abilmod="true" charelem="27121188" />
+            <statadd Level="1" value="1" statlink="Bluff Trained" charelem="27121188" />
+            <statadd Level="1" value="1" statlink="Bluff Misc" charelem="27121188" />
+         </Stat>
+
+         <Stat value="0" >
+            <alias name="Bluff Trained" />
+         </Stat>
+
+         <Stat value="2" >
+            <alias name="Bluff Misc" />
+            <statadd type="Feat" Level="26" value="2" charelem="27112c80" />
+         </Stat>
+
+         <Stat value="18" >
+            <alias name="Diplomacy" />
+            <statadd Level="1" value="1" statlink="HALF-LEVEL" charelem="27121188" />
+            <statadd type="Ability" Level="1" value="1" statlink="Charisma" abilmod="true" charelem="27121188" />
+            <statadd Level="1" value="1" statlink="Diplomacy Trained" charelem="27121188" />
+            <statadd Level="1" value="1" statlink="Diplomacy Misc" charelem="27121188" />
+         </Stat>
+
+         <Stat value="0" >
+            <alias name="Diplomacy Trained" />
+         </Stat>
+
+         <Stat value="2" >
+            <alias name="Diplomacy Misc" />
+            <statadd type="Power" Level="5" value="2" charelem="27109178" />
+         </Stat>
+
+         <Stat value="16" >
+            <alias name="Dungeoneering" />
+            <statadd Level="1" value="1" statlink="HALF-LEVEL" charelem="27121188" />
+            <statadd type="Ability" Level="1" value="1" statlink="Wisdom" abilmod="true" charelem="27121188" />
+            <statadd Level="1" value="1" statlink="Dungeoneering Trained" charelem="27121188" />
+            <statadd Level="1" value="1" statlink="Dungeoneering Misc" charelem="27121188" />
+         </Stat>
+
+         <Stat value="0" >
+            <alias name="Dungeoneering Trained" />
+         </Stat>
+
+         <Stat value="0" >
+            <alias name="Dungeoneering Misc" />
+         </Stat>
+
+         <Stat value="21" >
+            <alias name="Endurance" />
+            <statadd Level="1" value="1" statlink="HALF-LEVEL" charelem="27121188" />
+            <statadd type="Ability" Level="1" value="1" statlink="Constitution" abilmod="true" charelem="27121188" />
+            <statadd Level="1" value="1" statlink="Endurance Trained" charelem="27121188" />
+            <statadd Level="1" value="1" statlink="Endurance Misc" charelem="27121188" />
+            <statadd type="Armor Penalty" Level="1" value="1" statlink="Armor Penalty" charelem="27121188" />
+         </Stat>
+
+         <Stat value="0" >
+            <alias name="Endurance Trained" />
+         </Stat>
+
+         <Stat value="0" >
+            <alias name="Endurance Misc" />
+         </Stat>
+
+         <Stat value="21" >
+            <alias name="Heal" />
+            <statadd Level="1" value="1" statlink="HALF-LEVEL" charelem="27121188" />
+            <statadd type="Ability" Level="1" value="1" statlink="Wisdom" abilmod="true" charelem="27121188" />
+            <statadd Level="1" value="1" statlink="Heal Trained" charelem="27121188" />
+            <statadd Level="1" value="1" statlink="Heal Misc" charelem="27121188" />
+         </Stat>
+
+         <Stat value="5" >
+            <alias name="Heal Trained" />
+            <statadd type="trained" Level="1" value="5" charelem="271221e0" />
+         </Stat>
+
+         <Stat value="0" >
+            <alias name="Heal Misc" />
+         </Stat>
+
+         <Stat value="18" >
+            <alias name="History" />
+            <statadd Level="1" value="1" statlink="HALF-LEVEL" charelem="27121188" />
+            <statadd type="Ability" Level="1" value="1" statlink="Intelligence" abilmod="true" charelem="27121188" />
+            <statadd Level="1" value="1" statlink="History Trained" charelem="27121188" />
+            <statadd Level="1" value="1" statlink="History Misc" charelem="27121188" />
+         </Stat>
+
+         <Stat value="0" >
+            <alias name="History Trained" />
+         </Stat>
+
+         <Stat value="2" >
+            <alias name="History Misc" />
+            <statadd type="Racial" Level="1" value="2" charelem="271109f8" />
+         </Stat>
+
+         <Stat value="18" >
+            <alias name="Insight" />
+            <statadd Level="1" value="1" statlink="HALF-LEVEL" charelem="27121188" />
+            <statadd type="Ability" Level="1" value="1" statlink="Wisdom" abilmod="true" charelem="27121188" />
+            <statadd Level="1" value="1" statlink="Insight Trained" charelem="27121188" />
+            <statadd Level="1" value="1" statlink="Insight Misc" charelem="27121188" />
+         </Stat>
+
+         <Stat value="0" >
+            <alias name="Insight Trained" />
+         </Stat>
+
+         <Stat value="2" >
+            <alias name="Insight Misc" />
+            <statadd type="Feat" Level="24" value="2" charelem="27128ea8" />
+         </Stat>
+
+         <Stat value="25" >
+            <alias name="Intimidate" />
+            <statadd Level="1" value="1" statlink="HALF-LEVEL" charelem="27121188" />
+            <statadd type="Ability" Level="1" value="1" statlink="Charisma" abilmod="true" charelem="27121188" />
+            <statadd Level="1" value="1" statlink="Intimidate Trained" charelem="27121188" />
+            <statadd Level="1" value="1" statlink="Intimidate Misc" charelem="27121188" />
+         </Stat>
+
+         <Stat value="5" >
+            <alias name="Intimidate Trained" />
+            <statadd type="trained" Level="1" value="5" charelem="271288f8" />
+         </Stat>
+
+         <Stat value="4" >
+            <alias name="Intimidate Misc" />
+            <statadd type="Racial" Level="1" value="2" charelem="27115e30" />
+            <statadd type="Power" Level="5" value="2" charelem="27109178" />
+         </Stat>
+
+         <Stat value="16" >
+            <alias name="Nature" />
+            <statadd Level="1" value="1" statlink="HALF-LEVEL" charelem="27121188" />
+            <statadd type="Ability" Level="1" value="1" statlink="Wisdom" abilmod="true" charelem="27121188" />
+            <statadd Level="1" value="1" statlink="Nature Trained" charelem="27121188" />
+            <statadd Level="1" value="1" statlink="Nature Misc" charelem="27121188" />
+         </Stat>
+
+         <Stat value="0" >
+            <alias name="Nature Trained" />
+         </Stat>
+
+         <Stat value="0" >
+            <alias name="Nature Misc" />
+         </Stat>
+
+         <Stat value="18" >
+            <alias name="Perception" />
+            <statadd Level="1" value="1" statlink="HALF-LEVEL" charelem="27121188" />
+            <statadd type="Ability" Level="1" value="1" statlink="Wisdom" abilmod="true" charelem="27121188" />
+            <statadd Level="1" value="1" statlink="Perception Trained" charelem="27121188" />
+            <statadd Level="1" value="1" statlink="Perception Misc" charelem="27121188" />
+         </Stat>
+
+         <Stat value="0" >
+            <alias name="Perception Trained" />
+         </Stat>
+
+         <Stat value="2" >
+            <alias name="Perception Misc" />
+            <statadd type="Feat" Level="22" value="2" charelem="2711de00" />
+         </Stat>
+
+         <Stat value="16" >
+            <alias name="Religion" />
+            <statadd Level="1" value="1" statlink="HALF-LEVEL" charelem="27121188" />
+            <statadd type="Ability" Level="1" value="1" statlink="Intelligence" abilmod="true" charelem="27121188" />
+            <statadd Level="1" value="1" statlink="Religion Trained" charelem="27121188" />
+            <statadd Level="1" value="1" statlink="Religion Misc" charelem="27121188" />
+         </Stat>
+
+         <Stat value="0" >
+            <alias name="Religion Trained" />
+         </Stat>
+
+         <Stat value="0" >
+            <alias name="Religion Misc" />
+         </Stat>
+
+         <Stat value="16" >
+            <alias name="Stealth" />
+            <statadd Level="1" value="1" statlink="HALF-LEVEL" charelem="27121188" />
+            <statadd type="Ability" Level="1" value="1" statlink="Dexterity" abilmod="true" charelem="27121188" />
+            <statadd Level="1" value="1" statlink="Stealth Trained" charelem="27121188" />
+            <statadd Level="1" value="1" statlink="Stealth Misc" charelem="27121188" />
+            <statadd type="Armor Penalty" Level="1" value="1" statlink="Armor Penalty" charelem="27121188" />
+         </Stat>
+
+         <Stat value="0" >
+            <alias name="Stealth Trained" />
+         </Stat>
+
+         <Stat value="0" >
+            <alias name="Stealth Misc" />
+         </Stat>
+
+         <Stat value="16" >
+            <alias name="Streetwise" />
+            <statadd Level="1" value="1" statlink="HALF-LEVEL" charelem="27121188" />
+            <statadd type="Ability" Level="1" value="1" statlink="Charisma" abilmod="true" charelem="27121188" />
+            <statadd Level="1" value="1" statlink="Streetwise Trained" charelem="27121188" />
+            <statadd Level="1" value="1" statlink="Streetwise Misc" charelem="27121188" />
+         </Stat>
+
+         <Stat value="0" >
+            <alias name="Streetwise Trained" />
+         </Stat>
+
+         <Stat value="0" >
+            <alias name="Streetwise Misc" />
+         </Stat>
+
+         <Stat value="16" >
+            <alias name="Thievery" />
+            <statadd Level="1" value="1" statlink="HALF-LEVEL" charelem="27121188" />
+            <statadd type="Ability" Level="1" value="1" statlink="Dexterity" abilmod="true" charelem="27121188" />
+            <statadd Level="1" value="1" statlink="Thievery Trained" charelem="27121188" />
+            <statadd Level="1" value="1" statlink="Thievery Misc" charelem="27121188" />
+            <statadd type="Armor Penalty" Level="1" value="1" statlink="Armor Penalty" charelem="27121188" />
+         </Stat>
+
+         <Stat value="0" >
+            <alias name="Thievery Trained" />
+         </Stat>
+
+         <Stat value="0" >
+            <alias name="Thievery Misc" />
+         </Stat>
+
+         <Stat value="31" >
+            <alias name="Athletics" />
+            <statadd Level="1" value="1" statlink="HALF-LEVEL" charelem="27121188" />
+            <statadd type="Ability" Level="1" value="1" statlink="Strength" abilmod="true" charelem="27121188" />
+            <statadd Level="1" value="1" statlink="Athletics Trained" charelem="27121188" />
+            <statadd Level="1" value="1" statlink="Athletics Misc" charelem="27121188" />
+            <statadd type="Armor Penalty" Level="1" value="1" statlink="Armor Penalty" charelem="27121188" />
+         </Stat>
+
+         <Stat value="5" >
+            <alias name="Athletics Trained" />
+            <statadd type="trained" Level="1" value="5" charelem="27127478" />
+         </Stat>
+
+         <Stat value="2" >
+            <alias name="Athletics Misc" />
+            <statadd type="Feat" Level="18" value="2" charelem="27129248" />
+         </Stat>
+
+         <Stat value="28" >
+            <alias name="Passive Perception" />
+            <statadd Level="1" value="1" statlink="Perception" charelem="27121188" />
+            <statadd Level="1" value="10" charelem="27121188" />
+         </Stat>
+
+         <Stat value="28" >
+            <alias name="Passive Insight" />
+            <statadd Level="1" value="1" statlink="Insight" charelem="27121188" />
+            <statadd Level="1" value="10" charelem="27121188" />
+         </Stat>
+
+         <Stat value="6" >
+            <alias name="Speed" />
+            <statadd Level="1" value="6" charelem="270f6dd0" />
+         </Stat>
+
+         <Stat value="0" >
+            <alias name="Average Height" />
+            <statadd String="6&apos; 2&quot;-6&apos; 8&quot;" Level="1" value="0" />
+         </Stat>
+
+         <Stat value="0" >
+            <alias name="Average Weight" />
+            <statadd String="220-320 lb." Level="1" value="0" />
+         </Stat>
+
+         <Stat value="0" >
+            <alias name="Size" />
+            <statadd String="Medium" Level="1" value="0" />
+         </Stat>
+
+         <Stat value="1" >
+            <alias name="Dragonborn Fury Bonus" />
+            <statadd Level="1" value="1" charelem="270318e8" />
+         </Stat>
+
+         <Stat value="0" >
+            <alias name="attack rolls" />
+            <statadd type="Racial" Level="1" conditional="when you&apos;re bloodied" value="1" statlink="Dragonborn Fury Bonus" charelem="270318e8" />
+            <statadd Level="1" conditional="with opportunity attacks" value="1" statlink="Combat Superiority" charelem="27109de0" />
+            <statadd Level="28" conditional="for each ally adjacent to the enemy, on opportunity attacks" value="1" charelem="2711e5b0" />
+         </Stat>
+
+         <Stat value="6" >
+            <alias name="Healing Surge Value" />
+            <statadd Level="1" value="1" statlink="Constitution" abilmod="true" charelem="270ff118" />
+         </Stat>
+
+         <Stat value="2" >
+            <alias name="Language Count" />
+            <statadd Level="1" value="1" charelem="27103c58" />
+            <statadd Level="1" value="1" charelem="2710a400" />
+         </Stat>
+
+         <Stat value="0" >
+            <alias name="_CLASSNAME" />
+            <statadd String="ID_FMP_CLASS_3" Level="1" value="0" />
+         </Stat>
+
+         <Stat value="6" >
+            <alias name="_PER-LEVEL-HPS" />
+            <statadd Level="1" value="6" charelem="271045d8" />
+         </Stat>
+
+         <Stat value="1" >
+            <alias name="Combat Superiority" />
+            <statadd type="Ability" Level="1" value="1" statlink="Wisdom modifier" charelem="27109de0" />
+         </Stat>
+
+         <Stat value="1" >
+            <alias name="two-hands,weapon:attack" />
+            <statadd Level="1" value="1" charelem="2712f260" />
+         </Stat>
+
+         <Stat value="3" >
+            <alias name="weapon,heavy blade group:attack" />
+            <statadd type="Feat" Level="1" value="1" charelem="271237a0" />
+            <statadd type="Feat" Level="1" requires="11 level" value="2" charelem="271237a0" />
+            <statadd type="Feat" Level="1" requires="21 level" value="3" charelem="271237a0" />
+         </Stat>
+
+         <Stat value="3" >
+            <alias name="Weapon Focus (Heavy Blade)" />
+            <statadd Level="2" value="1" charelem="2711d898" />
+            <statadd Level="2" requires="Paragon Tier" value="1" charelem="2711d898" />
+            <statadd Level="2" requires="Epic Tier" value="1" charelem="2711d898" />
+         </Stat>
+
+         <Stat value="3" >
+            <alias name="Heavy Blade group,weapon:damage" />
+            <statadd type="Feat" Level="2" value="1" statlink="Weapon Focus (Heavy Blade)" charelem="2711d898" />
+         </Stat>
+
+         <Stat value="15" >
+            <alias name="Toughness" />
+            <statadd Level="4" value="5" charelem="271005e8" />
+            <statadd Level="4" requires="Paragon Tier" value="5" charelem="271005e8" />
+            <statadd Level="4" requires="Epic Tier" value="5" charelem="271005e8" />
+         </Stat>
+
+         <Stat value="0" >
+            <alias name="blowgun group:damage" />
+            <statadd String="+1d6" Level="10" conditional="when you make a weapon attack and score a critical hit. Increase to 2d6 at Level 21" value="0" />
+         </Stat>
+
+         <Stat value="0" >
+            <alias name="Action Point" />
+            <statadd String="Giant-Slaying Action:When you spend an action point to take an extra action, you gain a +2 bonus to attack rolls and AC until the start of your next turn. Against Large or larger enemies, the bonus to AC is +4." Level="11" value="0" />
+            <statadd String="Spectral Step:When you spend an action point to take an extra action, you also become insubstantial until the end of your current turn." Level="14" value="0" />
+         </Stat>
+
+         <Stat value="0" >
+            <alias name="resist:all" />
+            <statadd type="resist" Level="21" conditional="while you have two or more enemies marked" value="5" charelem="271074b0" />
+         </Stat>
+
+         <Stat value="0" >
+            <alias name="damage rolls" />
+            <statadd Level="28" conditional="for each ally adjacent to the enemy, on opportunity attacks" value="1" charelem="2711e5b0" />
+         </Stat>
+
+         <Stat value="3" >
+            <alias name="Polearm Expertise" />
+            <statadd Level="30" value="1" charelem="27129c00" />
+            <statadd Level="30" requires="Paragon Tier" value="1" charelem="27129c00" />
+            <statadd Level="30" requires="Epic Tier" value="1" charelem="27129c00" />
+         </Stat>
+
+         <Stat value="3" >
+            <alias name="weapon,polearm group:attack" />
+            <statadd type="Feat" Level="30" value="1" statlink="Polearm Expertise" charelem="27129c00" />
+         </Stat>
+
+         <Stat value="0" >
+            <alias name="Hybrid Power Points" />
+            <statadd value="0" />
+         </Stat>
+
+         <Stat value="0" >
+            <alias name="Weight" />
+            <statadd value="0" />
+         </Stat>
+
+      </StatBlock>
+
+      <!--
+         The list of all rules elements the character has, after taking into
+         account retraining, multiclass power swapping, etc.
+      -->
+      <RulesElementTally>
+         <RulesElement name="1" type="Level" internal-id="ID_INTERNAL_LEVEL_1" charelem="27124ec0" legality="rules-legal" />
+         <RulesElement name="Level1Rules" type="Level1Rules" internal-id="ID_INTERNAL_LEVEL1RULES_LEVEL1RULES" charelem="271253f8" legality="rules-legal" />
+         <RulesElement name="SkillRules" type="Level1Rules" internal-id="ID_INTERNAL_LEVEL1RULES_SKILLRULES" charelem="27121188" legality="rules-legal" />
+         <RulesElement name="Acrobatics" type="Skill" internal-id="ID_FMP_SKILL_1" url="http://www.wizards.com/dndinsider/compendium/skill.aspx?id=1" charelem="27127d28" legality="rules-legal" />
+         <RulesElement name="Arcana" type="Skill" internal-id="ID_FMP_SKILL_2" url="http://www.wizards.com/dndinsider/compendium/skill.aspx?id=2" charelem="2710ea98" legality="rules-legal" />
+         <RulesElement name="Bluff" type="Skill" internal-id="ID_FMP_SKILL_3" url="http://www.wizards.com/dndinsider/compendium/skill.aspx?id=3" charelem="2710e400" legality="rules-legal" />
+         <RulesElement name="Diplomacy" type="Skill" internal-id="ID_FMP_SKILL_6" url="http://www.wizards.com/dndinsider/compendium/skill.aspx?id=6" charelem="27103dc8" legality="rules-legal" />
+         <RulesElement name="Dungeoneering" type="Skill" internal-id="ID_FMP_SKILL_7" url="http://www.wizards.com/dndinsider/compendium/skill.aspx?id=7" charelem="2711ea10" legality="rules-legal" />
+         <RulesElement name="Endurance" type="Skill" internal-id="ID_FMP_SKILL_8" url="http://www.wizards.com/dndinsider/compendium/skill.aspx?id=8" charelem="27101998" legality="rules-legal" />
+         <RulesElement name="Heal" type="Skill" internal-id="ID_FMP_SKILL_9" url="http://www.wizards.com/dndinsider/compendium/skill.aspx?id=9" charelem="271018f0" legality="rules-legal" />
+         <RulesElement name="History" type="Skill" internal-id="ID_FMP_SKILL_11" url="http://www.wizards.com/dndinsider/compendium/skill.aspx?id=11" charelem="270d2fb0" legality="rules-legal" />
+         <RulesElement name="Insight" type="Skill" internal-id="ID_FMP_SKILL_13" url="http://www.wizards.com/dndinsider/compendium/skill.aspx?id=13" charelem="2711d678" legality="rules-legal" />
+         <RulesElement name="Intimidate" type="Skill" internal-id="ID_FMP_SKILL_14" url="http://www.wizards.com/dndinsider/compendium/skill.aspx?id=14" charelem="2712e398" legality="rules-legal" />
+         <RulesElement name="Nature" type="Skill" internal-id="ID_FMP_SKILL_16" url="http://www.wizards.com/dndinsider/compendium/skill.aspx?id=16" charelem="270ecc60" legality="rules-legal" />
+         <RulesElement name="Perception" type="Skill" internal-id="ID_FMP_SKILL_17" url="http://www.wizards.com/dndinsider/compendium/skill.aspx?id=17" charelem="27127a48" legality="rules-legal" />
+         <RulesElement name="Religion" type="Skill" internal-id="ID_FMP_SKILL_18" url="http://www.wizards.com/dndinsider/compendium/skill.aspx?id=18" charelem="2710e570" legality="rules-legal" />
+         <RulesElement name="Stealth" type="Skill" internal-id="ID_FMP_SKILL_20" url="http://www.wizards.com/dndinsider/compendium/skill.aspx?id=20" charelem="27113ae8" legality="rules-legal" />
+         <RulesElement name="Streetwise" type="Skill" internal-id="ID_FMP_SKILL_21" url="http://www.wizards.com/dndinsider/compendium/skill.aspx?id=21" charelem="27115bf0" legality="rules-legal" />
+         <RulesElement name="Thievery" type="Skill" internal-id="ID_FMP_SKILL_23" url="http://www.wizards.com/dndinsider/compendium/skill.aspx?id=23" charelem="27127bb8" legality="rules-legal" />
+         <RulesElement name="Athletics" type="Skill" internal-id="ID_FMP_SKILL_27" url="http://www.wizards.com/dndinsider/compendium/skill.aspx?id=27" charelem="27128bc8" legality="rules-legal" />
+         <RulesElement name="Heroic" type="Tier" internal-id="ID_INTERNAL_TIER_HEROIC" charelem="2711fe68" legality="rules-legal" />
+         <RulesElement name="Melee Basic Attack" type="Power" internal-id="ID_INTERNAL_POWER_MELEE_BASIC_ATTACK" charelem="271275f8" legality="rules-legal" />
+         <RulesElement name="Ranged Basic Attack" type="Power" internal-id="ID_INTERNAL_POWER_RANGED_BASIC_ATTACK" charelem="27128798" legality="rules-legal" />
+         <RulesElement name="Bull Rush Attack" type="Power" internal-id="ID_INTERNAL_POWER_BULL_RUSH_ATTACK" charelem="2711dc30" legality="rules-legal" />
+         <RulesElement name="Grab Attack" type="Power" internal-id="ID_INTERNAL_POWER_GRAB_ATTACK" charelem="2711fa80" legality="rules-legal" />
+         <RulesElement name="Opportunity Attack" type="Power" internal-id="ID_INTERNAL_POWER_OPPORTUNITY_ATTACK" charelem="2711d720" legality="rules-legal" />
+         <RulesElement name="Second Wind" type="Power" internal-id="ID_KDM_POWER_SECOND_WIND" charelem="271098a0" legality="rules-legal" />
+         <RulesElement name="DetailsRules" type="Level1Rules" internal-id="ID_INTERNAL_LEVEL1RULES_DETAILSRULES" charelem="27116280" legality="rules-legal" />
+         <RulesElement name="Male" type="Gender" internal-id="ID_INTERNAL_GENDER_MALE" charelem="2710e128" legality="rules-legal" />
+         <RulesElement name="Unaligned" type="Alignment" internal-id="ID_FMP_ALIGNMENT_1" charelem="270f0b90" legality="rules-legal" />
+         <RulesElement name="Expansion1" type="Level1Rules" internal-id="ID_INTERNAL_LEVEL1RULES_EXPANSION1" charelem="2712bb48" legality="rules-legal" />
+         <RulesElement name="Background Benefit" type="Internal" internal-id="ID_INTERNAL_INTERNAL_BACKGROUND_BENEFIT" charelem="2711ff10" legality="rules-legal" />
+         <RulesElement name="Expansion2" type="Level1Rules" internal-id="ID_INTERNAL_LEVEL1RULES_EXPANSION2" charelem="27122ce0" legality="rules-legal" />
+         <RulesElement name="Samurai" type="Theme" internal-id="ID_FMP_THEME_935" charelem="27107fe0" legality="rules-legal" />
+         <RulesElement name="Level 1 Samurai Feature" type="Class Feature" internal-id="ID_FMP_CLASS_FEATURE_4255" charelem="2710b648" legality="rules-legal" >
+            <specific name="Short Description" > Gain the iaijutsu power </specific>
+         </RulesElement>
+         <RulesElement name="Iaijutsu" type="Power" internal-id="ID_FMP_POWER_16000" url="http://www.wizards.com/dndinsider/compendium/power.aspx?id=16000" charelem="270ed2d0" legality="rules-legal" />
+         <RulesElement name="Expansion3" type="Level1Rules" internal-id="ID_INTERNAL_LEVEL1RULES_EXPANSION3" charelem="27110030" legality="rules-legal" />
+         <RulesElement name="Expansion4" type="Level1Rules" internal-id="ID_INTERNAL_LEVEL1RULES_EXPANSION4" charelem="2711f538" legality="rules-legal" />
+         <RulesElement name="Expansion5" type="Level1Rules" internal-id="ID_INTERNAL_LEVEL1RULES_EXPANSION5" charelem="27117688" legality="rules-legal" />
+         <RulesElement name="Dragonborn" type="Race" internal-id="ID_FMP_RACE_1" url="http://www.wizards.com/dndinsider/compendium/race.aspx?id=1" charelem="270f6dd0" legality="rules-legal" >
+            <specific name="Short Description" > Descended from dragons, dragonborn are a proud race of warriors. </specific>
+         </RulesElement>
+         <RulesElement name="Dragonborn" type="Grants" internal-id="ID_INTERNAL_GRANTS_DRAGONBORN" charelem="27126910" legality="rules-legal" />
+         <RulesElement name="Medium" type="Size" internal-id="ID_INTERNAL_SIZE_MEDIUM" charelem="271131f0" legality="rules-legal" />
+         <RulesElement name="Normal" type="Vision" internal-id="ID_INTERNAL_VISION_NORMAL" charelem="271059d0" legality="rules-legal" />
+         <RulesElement name="Dragonborn Subrace" type="Racial Trait" internal-id="ID_TIV_RACIAL_TRAIT_DRAGONBORN" charelem="271150c0" legality="rules-legal" />
+         <RulesElement name="Standard Dragonborn Racial Traits" type="Racial Trait" internal-id="ID_TIV_SUBRACE_3-1" charelem="2710c4d8" legality="rules-legal" />
+         <RulesElement name="Strength" type="Race Ability Bonus" internal-id="ID_INTERNAL_RACE_ABILITY_BONUS_STRENGTH" charelem="27100aa0" legality="rules-legal" />
+         <RulesElement name="Charisma" type="Race Ability Bonus" internal-id="ID_INTERNAL_RACE_ABILITY_BONUS_CHARISMA" charelem="270dbfa8" legality="rules-legal" />
+         <RulesElement name="History Bonus" type="Racial Trait" internal-id="ID_INTERNAL_RACIAL_TRAIT_HISTORY_BONUS" charelem="271109f8" legality="rules-legal" />
+         <RulesElement name="Intimidate Bonus" type="Racial Trait" internal-id="ID_INTERNAL_RACIAL_TRAIT_INTIMIDATE_BONUS" charelem="27115e30" legality="rules-legal" />
+         <RulesElement name="Dragonborn Fury" type="Racial Trait" internal-id="ID_FMP_RACIAL_TRAIT_379" charelem="270318e8" legality="rules-legal" >
+            <specific name="Short Description" > +1 to attacks while bloodied </specific>
+         </RulesElement>
+         <RulesElement name="Draconic Heritage" type="Racial Trait" internal-id="ID_FMP_RACIAL_TRAIT_631" charelem="270ff118" legality="rules-legal" >
+            <specific name="Short Description" > Add Con modifier to healing surge value </specific>
+         </RulesElement>
+         <RulesElement name="Dragonborn Racial Power" type="Racial Trait" internal-id="ID_FMP_RACIAL_TRAIT_3162" charelem="27127198" legality="rules-legal" />
+         <RulesElement name="Dragon Breath" type="Racial Trait" internal-id="ID_FMP_RACIAL_TRAIT_6" charelem="27125d98" legality="rules-legal" >
+            <specific name="Short Description" > You have the dragon breath power </specific>
+         </RulesElement>
+         <RulesElement name="Dragon Breath" type="Power" internal-id="ID_FMP_POWER_1448" url="http://www.wizards.com/dndinsider/compendium/power.aspx?id=1448" charelem="27101f18" legality="rules-legal" />
+         <RulesElement name="Dragon Breath Strength" type="Racial Trait" internal-id="ID_INTERNAL_RACIAL_TRAIT_DRAGON_BREATH_STRENGTH" charelem="27103ae8" legality="rules-legal" >
+            <specific name="Short Description" > Use Str for dragon breath </specific>
+         </RulesElement>
+         <RulesElement name="Dragon Breath Lightning" type="Racial Trait" internal-id="ID_INTERNAL_RACIAL_TRAIT_DRAGON_BREATH_LIGHTNING" charelem="270ffc80" legality="rules-legal" >
+            <specific name="Short Description" > Dragon breath deals lightning damage </specific>
+         </RulesElement>
+         <RulesElement name="Common" type="Language" internal-id="ID_FMP_LANGUAGE_1" charelem="27103c58" legality="rules-legal" />
+         <RulesElement name="Draconic" type="Language" internal-id="ID_FMP_LANGUAGE_2" charelem="2710a400" legality="rules-legal" />
+         <RulesElement name="Fighter" type="Class" internal-id="ID_FMP_CLASS_3" url="http://www.wizards.com/dndinsider/compendium/class.aspx?id=3" charelem="271045d8" legality="rules-legal" >
+            <specific name="Short Description" > You define the front line of combat, crushing foes in melee while protecting your allies. </specific>
+         </RulesElement>
+         <RulesElement name="Fighter" type="Grants" internal-id="ID_INTERNAL_GRANTS_FIGHTER" charelem="270e3390" legality="rules-legal" />
+         <RulesElement name="Defender" type="Role" internal-id="ID_FMP_ROLE_4" charelem="271214b8" legality="rules-legal" />
+         <RulesElement name="Martial" type="Power Source" internal-id="ID_FMP_POWER_SOURCE_1" charelem="27117598" legality="rules-legal" />
+         <RulesElement name="Armor Proficiency (Cloth)" type="Proficiency" internal-id="ID_INTERNAL_PROFICIENCY_ARMOR_PROFICIENCY_(CLOTH)" charelem="27127760" legality="rules-legal" />
+         <RulesElement name="Armor Proficiency (Leather)" type="Proficiency" internal-id="ID_INTERNAL_PROFICIENCY_ARMOR_PROFICIENCY_(LEATHER)" charelem="27115960" legality="rules-legal" />
+         <RulesElement name="Armor Proficiency (Hide)" type="Proficiency" internal-id="ID_INTERNAL_PROFICIENCY_ARMOR_PROFICIENCY_(HIDE)" charelem="2710d900" legality="rules-legal" />
+         <RulesElement name="Armor Proficiency (Chainmail)" type="Proficiency" internal-id="ID_INTERNAL_PROFICIENCY_ARMOR_PROFICIENCY_(CHAINMAIL)" charelem="27031b80" legality="rules-legal" />
+         <RulesElement name="Armor Proficiency (Scale)" type="Proficiency" internal-id="ID_INTERNAL_PROFICIENCY_ARMOR_PROFICIENCY_(SCALE)" charelem="2710db80" legality="rules-legal" />
+         <RulesElement name="Shield Proficiency (Heavy)" type="Proficiency" internal-id="ID_INTERNAL_PROFICIENCY_SHIELD_PROFICIENCY_(HEAVY)" charelem="270f8280" legality="rules-legal" />
+         <RulesElement name="Shield Proficiency (Light)" type="Proficiency" internal-id="ID_INTERNAL_PROFICIENCY_SHIELD_PROFICIENCY_(LIGHT)" charelem="27130e90" legality="rules-legal" />
+         <RulesElement name="Shield Proficiency (Spiked)" type="Proficiency" internal-id="ID_INTERNAL_PROFICIENCY_SHIELD_PROFICIENCY_(SPIKED)" charelem="27116d48" legality="rules-legal" />
+         <RulesElement name="Simple Melee" type="Proficiency" internal-id="ID_INTERNAL_PROFICIENCY_SIMPLE_MELEE" charelem="2712bbf0" legality="rules-legal" />
+         <RulesElement name="Weapon Proficiency (Club)" type="Proficiency" internal-id="ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(CLUB)" charelem="2712be88" legality="rules-legal" />
+         <RulesElement name="Weapon Proficiency (Dagger)" type="Proficiency" internal-id="ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(DAGGER)" charelem="271164f8" legality="rules-legal" />
+         <RulesElement name="Weapon Proficiency (Javelin)" type="Proficiency" internal-id="ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(JAVELIN)" charelem="27116ca0" legality="rules-legal" />
+         <RulesElement name="Weapon Proficiency (Mace)" type="Proficiency" internal-id="ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(MACE)" charelem="2712e2f0" legality="rules-legal" />
+         <RulesElement name="Weapon Proficiency (Sickle)" type="Proficiency" internal-id="ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(SICKLE)" charelem="2710c310" legality="rules-legal" />
+         <RulesElement name="Weapon Proficiency (Spear)" type="Proficiency" internal-id="ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(SPEAR)" charelem="2711fbd0" legality="rules-legal" />
+         <RulesElement name="Weapon Proficiency (Greatclub)" type="Proficiency" internal-id="ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(GREATCLUB)" charelem="27117210" legality="rules-legal" />
+         <RulesElement name="Weapon Proficiency (Morningstar)" type="Proficiency" internal-id="ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(MORNINGSTAR)" charelem="270efa30" legality="rules-legal" />
+         <RulesElement name="Weapon Proficiency (Quarterstaff)" type="Proficiency" internal-id="ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(QUARTERSTAFF)" charelem="2711f7e0" legality="rules-legal" />
+         <RulesElement name="Weapon Proficiency (Scythe)" type="Proficiency" internal-id="ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(SCYTHE)" charelem="27116f40" legality="rules-legal" />
+         <RulesElement name="Weapon Proficiency (Spiked gauntlet)" type="Proficiency" internal-id="ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(SPIKED_GAUNTLET)" charelem="2711f9d8" legality="rules-legal" />
+         <RulesElement name="Weapon Proficiency (Claw Fighter Claw)" type="Proficiency" internal-id="ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(CLAW_FIGHTER_CLAW)" charelem="2712dea0" legality="rules-legal" />
+         <RulesElement name="Weapon Proficiency (Shadowblade)" type="Proficiency" internal-id="ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(SHADOWBLADE)" charelem="2712d998" legality="rules-legal" />
+         <RulesElement name="Weapon Proficiency (Climbing Claw)" type="Proficiency" internal-id="ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(CLIMBING_CLAW)" charelem="2712d8f0" legality="rules-legal" />
+         <RulesElement name="Weapon Proficiency (Dragontooth Shield (heroic tier))" type="Proficiency" internal-id="ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(DRAGONTOOTH_SHIELD_(HEROIC_TIER))" charelem="2712b208" legality="rules-legal" />
+         <RulesElement name="Weapon Proficiency (Fighting Shield (heroic tier))" type="Proficiency" internal-id="ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(FIGHTING_SHIELD_(HEROIC_TIER))" charelem="270f7e00" legality="rules-legal" />
+         <RulesElement name="Weapon Proficiency (Soul Shield (paragon tier))" type="Proficiency" internal-id="ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(SOUL_SHIELD_(PARAGON_TIER))" charelem="2710a6b0" legality="rules-legal" />
+         <RulesElement name="Weapon Proficiency (Sun Shield (paragon tier))" type="Proficiency" internal-id="ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(SUN_SHIELD_(PARAGON_TIER))" charelem="270e9cf8" legality="rules-legal" />
+         <RulesElement name="Weapon Proficiency (Rod of Seven Parts (Weapon))" type="Proficiency" internal-id="ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(ROD_OF_SEVEN_PARTS_(WEAPON))" charelem="27106ae8" legality="rules-legal" />
+         <RulesElement name="Weapon Proficiency (Talid)" type="Proficiency" internal-id="ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(TALID)" charelem="2711e0c0" legality="rules-legal" />
+         <RulesElement name="Weapon Proficiency (Wrist Razors)" type="Proficiency" internal-id="ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(WRIST_RAZORS)" charelem="270f6e78" legality="rules-legal" />
+         <RulesElement name="Weapon Proficiency (Widow&apos;s Knife)" type="Proficiency" internal-id="ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(WIDOW&apos;S_KNIFE)" charelem="2710d220" legality="rules-legal" />
+         <RulesElement name="Weapon Proficiency (Light Mace)" type="Proficiency" internal-id="ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(LIGHT_MACE)" charelem="27114c68" legality="rules-legal" />
+         <RulesElement name="Weapon Proficiency (Short Spear)" type="Proficiency" internal-id="ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(SHORT_SPEAR)" charelem="2711f738" legality="rules-legal" />
+         <RulesElement name="Military Melee" type="Proficiency" internal-id="ID_INTERNAL_PROFICIENCY_MILITARY_MELEE" charelem="2710e2a0" legality="rules-legal" />
+         <RulesElement name="Weapon Proficiency (Battleaxe)" type="Proficiency" internal-id="ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(BATTLEAXE)" charelem="2712f100" legality="rules-legal" />
+         <RulesElement name="Weapon Proficiency (Handaxe)" type="Proficiency" internal-id="ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(HANDAXE)" charelem="2710f500" legality="rules-legal" />
+         <RulesElement name="Weapon Proficiency (Flail)" type="Proficiency" internal-id="ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(FLAIL)" charelem="2711d940" legality="rules-legal" />
+         <RulesElement name="Weapon Proficiency (Throwing hammer)" type="Proficiency" internal-id="ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(THROWING_HAMMER)" charelem="27108960" legality="rules-legal" />
+         <RulesElement name="Weapon Proficiency (Warhammer)" type="Proficiency" internal-id="ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(WARHAMMER)" charelem="27130d98" legality="rules-legal" />
+         <RulesElement name="Weapon Proficiency (War Pick)" type="Proficiency" internal-id="ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(WAR_PICK)" charelem="270c7c98" legality="rules-legal" />
+         <RulesElement name="Weapon Proficiency (Scimitar)" type="Proficiency" internal-id="ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(SCIMITAR)" charelem="27129548" legality="rules-legal" />
+         <RulesElement name="Weapon Proficiency (Longsword)" type="Proficiency" internal-id="ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(LONGSWORD)" charelem="27102490" legality="rules-legal" />
+         <RulesElement name="Weapon Proficiency (Short sword)" type="Proficiency" internal-id="ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(SHORT_SWORD)" charelem="27128640" legality="rules-legal" />
+         <RulesElement name="Weapon Proficiency (Greataxe)" type="Proficiency" internal-id="ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(GREATAXE)" charelem="27120a50" legality="rules-legal" />
+         <RulesElement name="Weapon Proficiency (Heavy flail)" type="Proficiency" internal-id="ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(HEAVY_FLAIL)" charelem="27129a18" legality="rules-legal" />
+         <RulesElement name="Weapon Proficiency (Glaive)" type="Proficiency" internal-id="ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(GLAIVE)" charelem="27112f70" legality="rules-legal" />
+         <RulesElement name="Weapon Proficiency (Halberd)" type="Proficiency" internal-id="ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(HALBERD)" charelem="27108ac0" legality="rules-legal" />
+         <RulesElement name="Weapon Proficiency (Maul)" type="Proficiency" internal-id="ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(MAUL)" charelem="2710fed8" legality="rules-legal" />
+         <RulesElement name="Weapon Proficiency (Longspear)" type="Proficiency" internal-id="ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(LONGSPEAR)" charelem="2711e2d0" legality="rules-legal" />
+         <RulesElement name="Weapon Proficiency (Greatsword)" type="Proficiency" internal-id="ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(GREATSWORD)" charelem="27129e18" legality="rules-legal" />
+         <RulesElement name="Weapon Proficiency (Rapier)" type="Proficiency" internal-id="ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(RAPIER)" charelem="270f6310" legality="rules-legal" />
+         <RulesElement name="Weapon Proficiency (Falchion)" type="Proficiency" internal-id="ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(FALCHION)" charelem="2710acc8" legality="rules-legal" />
+         <RulesElement name="Weapon Proficiency (Broadsword)" type="Proficiency" internal-id="ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(BROADSWORD)" charelem="2710b468" legality="rules-legal" />
+         <RulesElement name="Weapon Proficiency (Khopesh)" type="Proficiency" internal-id="ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(KHOPESH)" charelem="27104ee0" legality="rules-legal" />
+         <RulesElement name="Weapon Proficiency (Light war pick)" type="Proficiency" internal-id="ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(LIGHT_WAR_PICK)" charelem="270f4800" legality="rules-legal" />
+         <RulesElement name="Weapon Proficiency (Scourge)" type="Proficiency" internal-id="ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(SCOURGE)" charelem="270eb5e8" legality="rules-legal" />
+         <RulesElement name="Weapon Proficiency (Trident)" type="Proficiency" internal-id="ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(TRIDENT)" charelem="270aa290" legality="rules-legal" />
+         <RulesElement name="Weapon Proficiency (Heavy war pick)" type="Proficiency" internal-id="ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(HEAVY_WAR_PICK)" charelem="2712b2b0" legality="rules-legal" />
+         <RulesElement name="Weapon Proficiency (Feral Armor Claw)" type="Proficiency" internal-id="ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(FERAL_ARMOR_CLAW)" charelem="2701f1d0" legality="rules-legal" />
+         <RulesElement name="Weapon Proficiency (Alhulak)" type="Proficiency" internal-id="ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(ALHULAK)" charelem="270bc998" legality="rules-legal" />
+         <RulesElement name="Weapon Proficiency (Carrikal)" type="Proficiency" internal-id="ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(CARRIKAL)" charelem="27115d88" legality="rules-legal" />
+         <RulesElement name="Weapon Proficiency (Trikal)" type="Proficiency" internal-id="ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(TRIKAL)" charelem="2710e9f0" legality="rules-legal" />
+         <RulesElement name="Weapon Proficiency (Lance)" type="Proficiency" internal-id="ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(LANCE)" charelem="2712b028" legality="rules-legal" />
+         <RulesElement name="Weapon Proficiency (Pike)" type="Proficiency" internal-id="ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(PIKE)" charelem="2712cee8" legality="rules-legal" />
+         <RulesElement name="Simple Ranged" type="Proficiency" internal-id="ID_INTERNAL_PROFICIENCY_SIMPLE_RANGED" charelem="2712a238" legality="rules-legal" />
+         <RulesElement name="Weapon Proficiency (Hand Crossbow)" type="Proficiency" internal-id="ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(HAND_CROSSBOW)" charelem="270f00c0" legality="rules-legal" />
+         <RulesElement name="Weapon Proficiency (Sling)" type="Proficiency" internal-id="ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(SLING)" charelem="270edc30" legality="rules-legal" />
+         <RulesElement name="Weapon Proficiency (Crossbow)" type="Proficiency" internal-id="ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(CROSSBOW)" charelem="27103988" legality="rules-legal" />
+         <RulesElement name="Weapon Proficiency (Repeating crossbow)" type="Proficiency" internal-id="ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(REPEATING_CROSSBOW)" charelem="270f4238" legality="rules-legal" />
+         <RulesElement name="Weapon Proficiency (Dejada)" type="Proficiency" internal-id="ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(DEJADA)" charelem="270daeb0" legality="rules-legal" />
+         <RulesElement name="Military Ranged" type="Proficiency" internal-id="ID_INTERNAL_PROFICIENCY_MILITARY_RANGED" charelem="2710c818" legality="rules-legal" />
+         <RulesElement name="Weapon Proficiency (Shortbow)" type="Proficiency" internal-id="ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(SHORTBOW)" charelem="2711ce38" legality="rules-legal" />
+         <RulesElement name="Weapon Proficiency (Longbow)" type="Proficiency" internal-id="ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(LONGBOW)" charelem="270d7e58" legality="rules-legal" />
+         <RulesElement name="Weapon Proficiency (Chatkcha)" type="Proficiency" internal-id="ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(CHATKCHA)" charelem="270f6520" legality="rules-legal" />
+         <RulesElement name="Combat Challenge" type="Class Feature" internal-id="ID_FMP_CLASS_FEATURE_54" charelem="271310e0" legality="rules-legal" >
+            <specific name="Short Description" > Mark foes you attack. They get -2 to attacks not including you. Make basic melee attack against adjacent marked foe who shifts or makes attack not including you. Mark lasts until end of your next turn or marked by other. </specific>
+         </RulesElement>
+         <RulesElement name="Combat Challenge" type="Power" internal-id="ID_FMP_POWER_7419" url="http://www.wizards.com/dndinsider/compendium/power.aspx?id=7419" charelem="27104aa8" legality="rules-legal" />
+         <RulesElement name="Combat Superiority" type="Class Feature" internal-id="ID_FMP_CLASS_FEATURE_401" charelem="27109de0" legality="rules-legal" >
+            <specific name="Short Description" > Add Wis mod to opportunity attacks. Hit ends foe&apos;s movement (if any) this action. </specific>
+         </RulesElement>
+         <RulesElement name="Fighter Talents" type="Class Feature" internal-id="ID_FMP_CLASS_FEATURE_1064" charelem="2710fe30" legality="rules-legal" >
+            <specific name="Short Description" > You gain a fighter talent </specific>
+         </RulesElement>
+         <RulesElement name="Two-handed Weapon Talent" type="Class Feature" internal-id="ID_FMP_CLASS_FEATURE_1063" charelem="2712f260" legality="rules-legal" >
+            <specific name="Short Description" > +1 on attacks with two-handed weapons. </specific>
+         </RulesElement>
+         <RulesElement name="Fighter Implements" type="Grants" internal-id="ID_INTERNAL_GRANTS_FIGHTER_IMPLEMENTS" charelem="27106e78" legality="rules-legal" />
+         <RulesElement name="Cleave" type="Power" internal-id="ID_FMP_POWER_992" url="http://www.wizards.com/dndinsider/compendium/power.aspx?id=992" charelem="27122ef8" legality="rules-legal" />
+         <RulesElement name="Reaping Strike" type="Power" internal-id="ID_FMP_POWER_997" url="http://www.wizards.com/dndinsider/compendium/power.aspx?id=997" charelem="27108cc0" legality="rules-legal" />
+         <RulesElement name="Great Weapon Fighter" type="Build" internal-id="ID_FMP_BUILD_1" charelem="2711cfa0" legality="rules-legal" />
+         <RulesElement name="Great Weapon Fighter" type="Build Suggestions" internal-id="ID_INTERNAL_BUILD_SUGGESTIONS_GREAT_WEAPON_FIGHTER" charelem="27129970" legality="rules-legal" />
+         <RulesElement name="Heal" type="Skill Training" internal-id="ID_INTERNAL_SKILL_TRAINING_HEAL" charelem="271221e0" legality="rules-legal" />
+         <RulesElement name="Athletics" type="Skill Training" internal-id="ID_INTERNAL_SKILL_TRAINING_ATHLETICS" charelem="27127478" legality="rules-legal" />
+         <RulesElement name="Intimidate" type="Skill Training" internal-id="ID_INTERNAL_SKILL_TRAINING_INTIMIDATE" charelem="271288f8" legality="rules-legal" />
+         <RulesElement name="Weapon Expertise (Heavy Blade)" type="Feat" internal-id="ID_INTERNAL_FEAT_WEAPON_EXPERTISE_(HEAVY_BLADE)" charelem="271237a0" legality="rules-legal" >
+            <specific name="Short Description" > Gain +1 to weapon attacks with heavy blades (+2 at 11th, +3 at 21st level) </specific>
+         </RulesElement>
+         <RulesElement name="Kossuth" type="Deity" internal-id="ID_FMP_DEITY_51" charelem="2711ecc8" legality="rules-legal" />
+         <RulesElement name="2" type="Level" internal-id="ID_INTERNAL_LEVEL_2" charelem="27121b70" legality="rules-legal" />
+         <RulesElement name="Weapon Focus (Heavy Blade)" type="Feat" internal-id="ID_INTERNAL_FEAT_WEAPON_FOCUS_(HEAVY_BLADE)" charelem="2711d898" legality="rules-legal" >
+            <specific name="Short Description" > Gain +1 damage per tier with weapon attacks with Heavy Blades </specific>
+         </RulesElement>
+         <RulesElement name="Boundless Endurance" type="Power" internal-id="ID_FMP_POWER_1522" url="http://www.wizards.com/dndinsider/compendium/power.aspx?id=1522" charelem="27101e70" legality="rules-legal" />
+         <RulesElement name="3" type="Level" internal-id="ID_INTERNAL_LEVEL_3" charelem="27109e88" legality="rules-legal" />
+         <RulesElement name="Dance of Steel" type="Power" internal-id="ID_FMP_POWER_200" url="http://www.wizards.com/dndinsider/compendium/power.aspx?id=200" charelem="271062a8" legality="rules-legal" />
+         <RulesElement name="4" type="Level" internal-id="ID_INTERNAL_LEVEL_4" charelem="27104ba0" legality="rules-legal" />
+         <RulesElement name="Toughness" type="Feat" internal-id="ID_FMP_FEAT_171" url="http://www.wizards.com/dndinsider/compendium/feat.aspx?id=171" charelem="271005e8" legality="rules-legal" >
+            <specific name="Short Description" > Gain 5/10/15 (by tier) additional hit points </specific>
+         </RulesElement>
+         <RulesElement name="Strength" type="Ability Increase (Level 4)" internal-id="ID_INTERNAL_ABILITY_INCREASE_(LEVEL_4)_STRENGTH" charelem="2711ee80" legality="rules-legal" />
+         <RulesElement name="Constitution" type="Ability Increase (Level 4)" internal-id="ID_INTERNAL_ABILITY_INCREASE_(LEVEL_4)_CONSTITUTION" charelem="270f6660" legality="rules-legal" />
+         <RulesElement name="5" type="Level" internal-id="ID_INTERNAL_LEVEL_5" charelem="271049b8" legality="rules-legal" />
+         <RulesElement name="Dizzying Blow" type="Power" internal-id="ID_FMP_POWER_1434" url="http://www.wizards.com/dndinsider/compendium/power.aspx?id=1434" charelem="2712f838" legality="rules-legal" />
+         <RulesElement name="Level 5 Samurai Feature" type="Class Feature" internal-id="ID_FMP_CLASS_FEATURE_4256" charelem="27109178" legality="rules-legal" >
+            <specific name="Short Description" > Gain a +2 power bonus to Diplomacy checks and Intimidate checks </specific>
+         </RulesElement>
+         <RulesElement name="6" type="Level" internal-id="ID_INTERNAL_LEVEL_6" charelem="27114f30" legality="rules-legal" />
+         <RulesElement name="Disciple of Strength" type="Feat" internal-id="ID_FMP_FEAT_3135" url="http://www.wizards.com/dndinsider/compendium/feat.aspx?id=3135" charelem="2710ee00" legality="rules-legal" >
+            <specific name="Short Description" > After second wind, your first melee weapon attack before EoNT gains +5 to damage </specific>
+         </RulesElement>
+         <RulesElement name="Battle Awareness" type="Power" internal-id="ID_FMP_POWER_1440" url="http://www.wizards.com/dndinsider/compendium/power.aspx?id=1440" charelem="271255d0" legality="rules-legal" />
+         <RulesElement name="7" type="Level" internal-id="ID_INTERNAL_LEVEL_7" charelem="27102d28" legality="rules-legal" />
+         <RulesElement name="Griffon&apos;s Wrath" type="Power" internal-id="ID_FMP_POWER_608" url="http://www.wizards.com/dndinsider/compendium/power.aspx?id=608" charelem="27122538" legality="rules-legal" />
+         <RulesElement name="8" type="Level" internal-id="ID_INTERNAL_LEVEL_8" charelem="2711e380" legality="rules-legal" />
+         <RulesElement name="Disciple of Destruction" type="Feat" internal-id="ID_FMP_FEAT_3682" url="http://www.wizards.com/dndinsider/compendium/feat.aspx?id=3682" charelem="271229d8" legality="rules-legal" >
+            <specific name="Short Description" > Enemies you bloody take 5 extra damage </specific>
+         </RulesElement>
+         <RulesElement name="Strength" type="Ability Increase (Level 8)" internal-id="ID_INTERNAL_ABILITY_INCREASE_(LEVEL_8)_STRENGTH" charelem="2712b768" legality="rules-legal" />
+         <RulesElement name="Constitution" type="Ability Increase (Level 8)" internal-id="ID_INTERNAL_ABILITY_INCREASE_(LEVEL_8)_CONSTITUTION" charelem="2712bfe8" legality="rules-legal" />
+         <RulesElement name="9" type="Level" internal-id="ID_INTERNAL_LEVEL_9" charelem="271118e0" legality="rules-legal" />
+         <RulesElement name="Thicket of Blades" type="Power" internal-id="ID_FMP_POWER_1092" url="http://www.wizards.com/dndinsider/compendium/power.aspx?id=1092" charelem="27129b58" legality="rules-legal" />
+         <RulesElement name="10" type="Level" internal-id="ID_INTERNAL_LEVEL_10" charelem="270dcbf0" legality="rules-legal" />
+         <RulesElement name="Dragonborn Channeling" type="Feat" internal-id="ID_FMP_FEAT_2408" url="http://www.wizards.com/dndinsider/compendium/feat.aspx?id=2408" charelem="27124f70" legality="rules-legal" >
+            <specific name="Short Description" > Expend dragon breath for extra damage against target you hit with exploit (damage and type normal for dragon breath) </specific>
+         </RulesElement>
+         <RulesElement name="Last Ditch Evasion" type="Power" internal-id="ID_FMP_POWER_1443" url="http://www.wizards.com/dndinsider/compendium/power.aspx?id=1443" charelem="271291a0" legality="rules-legal" />
+         <RulesElement name="Level 10 Samurai Feature" type="Class Feature" internal-id="ID_FMP_CLASS_FEATURE_4257" charelem="27112bd8" legality="rules-legal" >
+            <specific name="Short Description" > Deal 1d6 extra damage (2d6 at level 21) with critical hits made using a chosen weapon group </specific>
+         </RulesElement>
+         <RulesElement name="Blowgun (Level 10 Samurai Feature)" type="Class Feature" internal-id="ID_INTERNAL_CLASS_FEATURE_SAMURAI_LEVEL_10_FEATURE_(BLOWGUN)" charelem="27120900" legality="rules-legal" >
+            <specific name="Short Description" > +1d6 crit damage with Blowgun, +2d6 at level 21. </specific>
+         </RulesElement>
+         <RulesElement name="11" type="Level" internal-id="ID_INTERNAL_LEVEL_11" charelem="271328c8" legality="rules-legal" />
+         <RulesElement name="Paragon" type="Tier" internal-id="ID_INTERNAL_TIER_PARAGON" charelem="27129d70" legality="rules-legal" />
+         <RulesElement name="Armor Proficiency: Plate" type="Feat" internal-id="ID_FMP_FEAT_114" url="http://www.wizards.com/dndinsider/compendium/feat.aspx?id=114" charelem="27125f08" legality="rules-legal" >
+            <specific name="Short Description" > Proficiency with plate armor </specific>
+         </RulesElement>
+         <RulesElement name="Armor Proficiency (Plate)" type="Proficiency" internal-id="ID_INTERNAL_PROFICIENCY_ARMOR_PROFICIENCY_(PLATE)" charelem="2712e660" legality="rules-legal" />
+         <RulesElement name="Giantslayer" type="Paragon Path" internal-id="ID_FMP_PARAGON_PATH_173" url="http://www.wizards.com/dndinsider/compendium/paragonpath.aspx?id=173" charelem="27129038" legality="rules-legal" />
+         <RulesElement name="Giant-Slaying Action" type="Class Feature" internal-id="ID_FMP_CLASS_FEATURE_923" charelem="270effd0" legality="rules-legal" >
+            <specific name="Short Description" > When you spend action point to gain action, gain +2 to attacks and AC (or +4 AC against Large and larger foes) until start of your next turn </specific>
+         </RulesElement>
+         <RulesElement name="Through the Fingers" type="Class Feature" internal-id="ID_FMP_CLASS_FEATURE_924" charelem="2710cb40" legality="rules-legal" >
+            <specific name="Short Description" > Make melee basic attack agasint foe that grabs you; on hit, make escape attempt adding damage dealt to your check </specific>
+         </RulesElement>
+         <RulesElement name="Little Bait" type="Power" internal-id="ID_FMP_POWER_4691" url="http://www.wizards.com/dndinsider/compendium/power.aspx?id=4691" charelem="27104758" legality="rules-legal" />
+         <RulesElement name="12" type="Level" internal-id="ID_INTERNAL_LEVEL_12" charelem="2710ff80" legality="rules-legal" />
+         <RulesElement name="Undeniable Crusader" type="Feat" internal-id="ID_FMP_FEAT_1732" url="http://www.wizards.com/dndinsider/compendium/feat.aspx?id=1732" charelem="27108340" legality="rules-legal" >
+            <specific name="Short Description" > Ignore resistances with Combat Challenge attacks </specific>
+         </RulesElement>
+         <RulesElement name="Ride the Giant Down" type="Power" internal-id="ID_FMP_POWER_4692" url="http://www.wizards.com/dndinsider/compendium/power.aspx?id=4692" charelem="27104398" legality="rules-legal" />
+         <RulesElement name="13" type="Level" internal-id="ID_INTERNAL_LEVEL_13" charelem="27130f80" legality="rules-legal" />
+         <RulesElement name="14" type="Level" internal-id="ID_INTERNAL_LEVEL_14" charelem="27113530" legality="rules-legal" />
+         <RulesElement name="Spectral Step" type="Feat" internal-id="ID_FMP_FEAT_3575" url="http://www.wizards.com/dndinsider/compendium/feat.aspx?id=3575" charelem="27132680" legality="rules-legal" >
+            <specific name="Short Description" > Gain insubstantial until end of turn when you spend AP for extra action </specific>
+         </RulesElement>
+         <RulesElement name="Strength" type="Ability Increase (Level 14)" internal-id="ID_INTERNAL_ABILITY_INCREASE_(LEVEL_14)_STRENGTH" charelem="2712f6e8" legality="rules-legal" />
+         <RulesElement name="Constitution" type="Ability Increase (Level 14)" internal-id="ID_INTERNAL_ABILITY_INCREASE_(LEVEL_14)_CONSTITUTION" charelem="27131490" legality="rules-legal" />
+         <RulesElement name="15" type="Level" internal-id="ID_INTERNAL_LEVEL_15" charelem="2712f1a8" legality="rules-legal" />
+         <RulesElement name="16" type="Level" internal-id="ID_INTERNAL_LEVEL_16" charelem="271145e8" legality="rules-legal" />
+         <RulesElement name="Strike and Shove" type="Feat" internal-id="ID_FMP_FEAT_2623" url="http://www.wizards.com/dndinsider/compendium/feat.aspx?id=2623" charelem="27125060" legality="rules-legal" >
+            <specific name="Short Description" > Push target 1 sq. after crit with melee attack </specific>
+         </RulesElement>
+         <RulesElement name="Strength From Pain" type="Power" internal-id="ID_FMP_POWER_4335" url="http://www.wizards.com/dndinsider/compendium/power.aspx?id=4335" charelem="27124cd0" legality="rules-legal" />
+         <RulesElement name="Small Targets" type="Class Feature" internal-id="ID_FMP_CLASS_FEATURE_925" charelem="271187e0" legality="rules-legal" >
+            <specific name="Short Description" > +4 AC against opportunity attacks if foe is Large or larger; +2 if foe is Medium or smaller </specific>
+         </RulesElement>
+         <RulesElement name="17" type="Level" internal-id="ID_INTERNAL_LEVEL_17" charelem="2710dd98" legality="rules-legal" />
+         <RulesElement name="18" type="Level" internal-id="ID_INTERNAL_LEVEL_18" charelem="2710c6d8" legality="rules-legal" />
+         <RulesElement name="Hunting Spear Student" type="Feat" internal-id="ID_FMP_FEAT_2339" url="http://www.wizards.com/dndinsider/compendium/feat.aspx?id=2339" charelem="27129248" legality="rules-legal" >
+            <specific name="Short Description" > +2 to Athletics; target hit with associated power is slowed until EoNT when you use style weapon </specific>
+         </RulesElement>
+         <RulesElement name="Strength" type="Ability Increase (Level 18)" internal-id="ID_INTERNAL_ABILITY_INCREASE_(LEVEL_18)_STRENGTH" charelem="27111988" legality="rules-legal" />
+         <RulesElement name="Constitution" type="Ability Increase (Level 18)" internal-id="ID_INTERNAL_ABILITY_INCREASE_(LEVEL_18)_CONSTITUTION" charelem="271220a8" legality="rules-legal" />
+         <RulesElement name="19" type="Level" internal-id="ID_INTERNAL_LEVEL_19" charelem="271225e0" legality="rules-legal" />
+         <RulesElement name="20" type="Level" internal-id="ID_INTERNAL_LEVEL_20" charelem="27115a08" legality="rules-legal" />
+         <RulesElement name="Thunder Hammer" type="Feat" internal-id="ID_FMP_FEAT_364" url="http://www.wizards.com/dndinsider/compendium/feat.aspx?id=364" charelem="2710d9a8" legality="rules-legal" >
+            <specific name="Short Description" > Enemy takes -2 to saving throws against dazed, immobilized, slowed, or stunned delivered with hammer or mace </specific>
+         </RulesElement>
+         <RulesElement name="Giantslayer&apos;s Strike" type="Power" internal-id="ID_FMP_POWER_4693" url="http://www.wizards.com/dndinsider/compendium/power.aspx?id=4693" charelem="27110db0" legality="rules-legal" />
+         <RulesElement name="21" type="Level" internal-id="ID_INTERNAL_LEVEL_21" charelem="2711cee0" legality="rules-legal" />
+         <RulesElement name="Epic" type="Tier" internal-id="ID_INTERNAL_TIER_EPIC" charelem="27115ce0" legality="rules-legal" />
+         <RulesElement name="Strength Through Challenge" type="Feat" internal-id="ID_FMP_FEAT_2965" url="http://www.wizards.com/dndinsider/compendium/feat.aspx?id=2965" charelem="271074b0" legality="rules-legal" >
+            <specific name="Short Description" > Gain resist 5 all while you have 2+ enemies marked </specific>
+         </RulesElement>
+         <RulesElement name="Keybearer" type="Epic Destiny" internal-id="ID_FMP_EPIC_DESTINY_297" url="http://www.wizards.com/dndinsider/compendium/epicdestiny.aspx?id=297" charelem="271321a8" legality="rules-legal" />
+         <RulesElement name="Portal Mastery" type="Class Feature" internal-id="ID_FMP_CLASS_FEATURE_1329" charelem="27131a48" legality="rules-legal" >
+            <specific name="Short Description" > Regain one-half your hp and appear on any plane when you die, 1/day. Use Linked Portal or Planar Portal ritual with no component cost, 1/day. </specific>
+         </RulesElement>
+         <RulesElement name="22" type="Level" internal-id="ID_INTERNAL_LEVEL_22" charelem="2712d830" legality="rules-legal" />
+         <RulesElement name="Blindfighting Sentinel" type="Feat" internal-id="ID_FMP_FEAT_3516" url="http://www.wizards.com/dndinsider/compendium/feat.aspx?id=3516" charelem="2711de00" legality="rules-legal" >
+            <specific name="Short Description" > +2 to Perception; no penalty to Perception from blinded; don&apos;t grant CA to invisible enemies </specific>
+         </RulesElement>
+         <RulesElement name="Strength Against Strength" type="Power" internal-id="ID_FMP_POWER_13692" url="http://www.wizards.com/dndinsider/compendium/power.aspx?id=13692" charelem="27108b68" legality="rules-legal" />
+         <RulesElement name="23" type="Level" internal-id="ID_INTERNAL_LEVEL_23" charelem="2710ba78" legality="rules-legal" />
+         <RulesElement name="24" type="Level" internal-id="ID_INTERNAL_LEVEL_24" charelem="271293e0" legality="rules-legal" />
+         <RulesElement name="Ninth Legion Student" type="Feat" internal-id="ID_FMP_FEAT_1317" url="http://www.wizards.com/dndinsider/compendium/feat.aspx?id=1317" charelem="27128ea8" legality="rules-legal" >
+            <specific name="Short Description" > +2 to Insight; use associated powers for OAs when wielding style weapon and shield </specific>
+         </RulesElement>
+         <RulesElement name="Strength" type="Ability Increase (Level 24)" internal-id="ID_INTERNAL_ABILITY_INCREASE_(LEVEL_24)_STRENGTH" charelem="27127fe8" legality="rules-legal" />
+         <RulesElement name="Constitution" type="Ability Increase (Level 24)" internal-id="ID_INTERNAL_ABILITY_INCREASE_(LEVEL_24)_CONSTITUTION" charelem="2710fb60" legality="rules-legal" />
+         <RulesElement name="Traveler&apos;s Tricks" type="Class Feature" internal-id="ID_FMP_CLASS_FEATURE_1330" charelem="27131c48" legality="rules-legal" >
+            <specific name="Short Description" > Teleport 5 after rolling 18+ on an attack roll. </specific>
+         </RulesElement>
+         <RulesElement name="25" type="Level" internal-id="ID_INTERNAL_LEVEL_25" charelem="27129ca8" legality="rules-legal" />
+         <RulesElement name="26" type="Level" internal-id="ID_INTERNAL_LEVEL_26" charelem="27132970" legality="rules-legal" />
+         <RulesElement name="Furtive Signals" type="Feat" internal-id="ID_FMP_FEAT_1270" url="http://www.wizards.com/dndinsider/compendium/feat.aspx?id=1270" charelem="27112c80" legality="rules-legal" >
+            <specific name="Short Description" > +2 to Bluff; give and get certain Bluff results to/from allies within 5 sq. who have this feat; communicate silently with allies in LOS who have this feat </specific>
+         </RulesElement>
+         <RulesElement name="Reality Distortion" type="Power" internal-id="ID_FMP_POWER_6600" url="http://www.wizards.com/dndinsider/compendium/power.aspx?id=6600" charelem="270fa0a0" legality="rules-legal" />
+         <RulesElement name="27" type="Level" internal-id="ID_INTERNAL_LEVEL_27" charelem="271270d0" legality="rules-legal" />
+         <RulesElement name="Blinding Cut" type="Power" internal-id="ID_FMP_POWER_10557" url="http://www.wizards.com/dndinsider/compendium/power.aspx?id=10557" charelem="2712e838" replaces="2710c3b8" legality="rules-legal" />
+         <RulesElement name="28" type="Level" internal-id="ID_INTERNAL_LEVEL_28" charelem="27127240" legality="rules-legal" />
+         <RulesElement name="Formation Fighting" type="Feat" internal-id="ID_FMP_FEAT_2418" url="http://www.wizards.com/dndinsider/compendium/feat.aspx?id=2418" charelem="2711e5b0" legality="rules-legal" >
+            <specific name="Short Description" > OAs gain bonus to attack and damage equal to allies adjacent to target </specific>
+         </RulesElement>
+         <RulesElement name="Strength" type="Ability Increase (Level 28)" internal-id="ID_INTERNAL_ABILITY_INCREASE_(LEVEL_28)_STRENGTH" charelem="2710a608" legality="rules-legal" />
+         <RulesElement name="Constitution" type="Ability Increase (Level 28)" internal-id="ID_INTERNAL_ABILITY_INCREASE_(LEVEL_28)_CONSTITUTION" charelem="271156b8" legality="rules-legal" />
+         <RulesElement name="29" type="Level" internal-id="ID_INTERNAL_LEVEL_29" charelem="27122e20" legality="rules-legal" />
+         <RulesElement name="Catastrophic Flurry" type="Power" internal-id="ID_FMP_POWER_4365" url="http://www.wizards.com/dndinsider/compendium/power.aspx?id=4365" charelem="2710e888" replaces="270f6188" legality="rules-legal" />
+         <RulesElement name="30" type="Level" internal-id="ID_INTERNAL_LEVEL_30" charelem="2712c420" legality="rules-legal" />
+         <RulesElement name="Polearm Expertise" type="Feat" internal-id="ID_FMP_FEAT_3611" url="http://www.wizards.com/dndinsider/compendium/feat.aspx?id=3611" charelem="27129c00" legality="rules-legal" >
+            <specific name="Short Description" > +1/2/3 by tier to weapon attack rolls made with polearms; gain a +2 bonus to all defenses against charge attacks </specific>
+         </RulesElement>
+         <RulesElement name="Unfettered Passage" type="Class Feature" internal-id="ID_FMP_CLASS_FEATURE_1331" charelem="27124360" legality="rules-legal" >
+            <specific name="Short Description" > You gain phasing. </specific>
+         </RulesElement>
+      </RulesElementTally>
+
+
+      <!--
+         The tally of the character&apos;s loot
+      -->
+      <LootTally>
+      </LootTally>
+
+      <!--
+         The fields for your powers. Each power is then followed
+         by the stats with that power paired with each legal weapon.
+         The weapons are listed in priority as the builder sees it.
+         Particularly, the first weapon listed is the default.
+      -->
+      <PowerStats>
+         <Power name="Melee Basic Attack" >
+            <specific name="Power Usage" > At-Will </specific>
+            <specific name="Action Type" > Standard Action </specific>
+            <Weapon name="Unarmed" >
+               <AttackBonus> 24 </AttackBonus>
+               <Damage> 2d4+9 </Damage>
+               <AttackStat> Strength </AttackStat>
+               <Defense> AC </Defense>
+               <HitComponents> +9 Strength modifier.
++15 half your level.
+
+               </HitComponents>
+               <DamageComponents> +9 Strength modifier.
+
+               </DamageComponents>
+               <Conditions> +1 Racial bonus to attack rolls when you&apos;re bloodied - Dragonborn Fury.
++1 to attack rolls with opportunity attacks - Combat Superiority.
++1 to attack rolls for each ally adjacent to the enemy, on opportunity attacks - Formation Fighting.
++1 to damage rolls for each ally adjacent to the enemy, on opportunity attacks - Formation Fighting.               </Conditions>
+            </Weapon>
+         </Power>
+
+         <Power name="Ranged Basic Attack" >
+            <specific name="Power Usage" > At-Will </specific>
+            <specific name="Action Type" > Standard Action </specific>
+            <Weapon name="Unarmed" >
+               <AttackBonus> 16 </AttackBonus>
+               <Damage> 2d4+1 </Damage>
+               <AttackStat> Dexterity </AttackStat>
+               <Defense> AC </Defense>
+               <HitComponents> +1 Dexterity modifier.
++15 half your level.
+
+               </HitComponents>
+               <DamageComponents> +1 Dexterity modifier.
+
+               </DamageComponents>
+               <Conditions> +1 Racial bonus to attack rolls when you&apos;re bloodied - Dragonborn Fury.
++1 to attack rolls with opportunity attacks - Combat Superiority.
++1 to attack rolls for each ally adjacent to the enemy, on opportunity attacks - Formation Fighting.
++1 to damage rolls for each ally adjacent to the enemy, on opportunity attacks - Formation Fighting.               </Conditions>
+            </Weapon>
+         </Power>
+
+         <Power name="Bull Rush Attack" >
+            <specific name="Power Usage" > At-Will </specific>
+            <specific name="Action Type" > Standard Action </specific>
+            <Weapon name="Unarmed" >
+               <AttackBonus> 24 </AttackBonus>
+               <Damage>  </Damage>
+               <AttackStat> Strength </AttackStat>
+               <Defense> Fortitude </Defense>
+               <HitComponents> +9 Strength modifier.
++15 half your level.
+
+               </HitComponents>
+               <DamageComponents> 
+               </DamageComponents>
+               <Conditions> +1 Racial bonus to attack rolls when you&apos;re bloodied - Dragonborn Fury.               </Conditions>
+            </Weapon>
+         </Power>
+
+         <Power name="Grab Attack" >
+            <specific name="Power Usage" > At-Will </specific>
+            <specific name="Action Type" > Standard Action </specific>
+            <Weapon name="Unarmed" >
+               <AttackBonus> 24 </AttackBonus>
+               <Damage>  </Damage>
+               <AttackStat> Strength </AttackStat>
+               <Defense> Reflex </Defense>
+               <HitComponents> +9 Strength modifier.
++15 half your level.
+
+               </HitComponents>
+               <DamageComponents> 
+               </DamageComponents>
+               <Conditions> +1 Racial bonus to attack rolls when you&apos;re bloodied - Dragonborn Fury.               </Conditions>
+            </Weapon>
+         </Power>
+
+         <Power name="Opportunity Attack" >
+            <specific name="Power Usage" > At-Will </specific>
+            <specific name="Action Type" > Opportunity Action </specific>
+         </Power>
+
+         <Power name="Second Wind" >
+            <specific name="Power Usage" > Encounter </specific>
+            <specific name="Action Type" > Standard Action </specific>
+         </Power>
+
+         <Power name="Iaijutsu" >
+            <specific name="Power Usage" > Encounter </specific>
+            <specific name="Action Type" > Free Action </specific>
+         </Power>
+
+         <Power name="Dragon Breath" >
+            <specific name="Power Usage" > Encounter </specific>
+            <specific name="Action Type" > Minor Action </specific>
+            <Weapon name="Unarmed" >
+               <AttackBonus> 30 </AttackBonus>
+               <Damage> 3d6+6 </Damage>
+               <AttackStat> Strength </AttackStat>
+               <Defense> Reflex </Defense>
+               <HitComponents> +6 power modifier.
++9 Strength modifier.
++15 half your level.
+
+               </HitComponents>
+               <DamageComponents> +6 Constitution modifier.
+
+               </DamageComponents>
+               <Conditions> +1 Racial bonus to attack rolls when you&apos;re bloodied - Dragonborn Fury.               </Conditions>
+            </Weapon>
+         </Power>
+
+         <Power name="Combat Challenge" >
+            <specific name="Power Usage" > At-Will </specific>
+            <specific name="Action Type" > Immediate Interrupt </specific>
+         </Power>
+
+         <Power name="Cleave" >
+            <specific name="Power Usage" > At-Will </specific>
+            <specific name="Action Type" > Standard Action </specific>
+            <Weapon name="Unarmed" >
+               <AttackBonus> 24 </AttackBonus>
+               <Damage> 2d4+9 </Damage>
+               <AttackStat> Strength </AttackStat>
+               <Defense> AC </Defense>
+               <HitComponents> +9 Strength modifier.
++15 half your level.
+
+               </HitComponents>
+               <DamageComponents> +9 Strength modifier.
+
+               </DamageComponents>
+               <Conditions> +1 Racial bonus to attack rolls when you&apos;re bloodied - Dragonborn Fury.               </Conditions>
+            </Weapon>
+         </Power>
+
+         <Power name="Reaping Strike" >
+            <specific name="Power Usage" > At-Will </specific>
+            <specific name="Action Type" > Standard Action </specific>
+            <Weapon name="Unarmed" >
+               <AttackBonus> 24 </AttackBonus>
+               <Damage> 2d4+9 </Damage>
+               <AttackStat> Strength </AttackStat>
+               <Defense> AC </Defense>
+               <HitComponents> +9 Strength modifier.
++15 half your level.
+
+               </HitComponents>
+               <DamageComponents> +9 Strength modifier.
+
+               </DamageComponents>
+               <Conditions> +1 Racial bonus to attack rolls when you&apos;re bloodied - Dragonborn Fury.               </Conditions>
+            </Weapon>
+         </Power>
+
+         <Power name="Boundless Endurance" >
+            <specific name="Power Usage" > Daily </specific>
+            <specific name="Action Type" > Minor Action </specific>
+            <Weapon name="Unarmed" >
+               <AttackBonus> 15 </AttackBonus>
+               <Damage>  </Damage>
+               <AttackStat> Unknown </AttackStat>
+               <Defense> Unknown </Defense>
+               <HitComponents> +15 half your level.
+
+               </HitComponents>
+               <DamageComponents> 
+               </DamageComponents>
+               <Conditions> +1 Racial bonus to attack rolls when you&apos;re bloodied - Dragonborn Fury.               </Conditions>
+            </Weapon>
+         </Power>
+
+         <Power name="Dance of Steel" >
+            <specific name="Power Usage" > Encounter </specific>
+            <specific name="Action Type" > Standard Action </specific>
+            <Weapon name="Unarmed" >
+               <AttackBonus> 24 </AttackBonus>
+               <Damage> 2d4+9 </Damage>
+               <AttackStat> Strength </AttackStat>
+               <Defense> AC </Defense>
+               <HitComponents> +9 Strength modifier.
++15 half your level.
+
+               </HitComponents>
+               <DamageComponents> +9 Strength modifier.
+
+               </DamageComponents>
+               <Conditions> +1 Racial bonus to attack rolls when you&apos;re bloodied - Dragonborn Fury.               </Conditions>
+            </Weapon>
+         </Power>
+
+         <Power name="Dizzying Blow" >
+            <specific name="Power Usage" > Daily </specific>
+            <specific name="Action Type" > Standard Action </specific>
+            <Weapon name="Unarmed" >
+               <AttackBonus> 24 </AttackBonus>
+               <Damage> 3d4+9 </Damage>
+               <AttackStat> Strength </AttackStat>
+               <Defense> AC </Defense>
+               <HitComponents> +9 Strength modifier.
++15 half your level.
+
+               </HitComponents>
+               <DamageComponents> +9 Strength modifier.
+
+               </DamageComponents>
+               <Conditions> +1 Racial bonus to attack rolls when you&apos;re bloodied - Dragonborn Fury.               </Conditions>
+            </Weapon>
+         </Power>
+
+         <Power name="Battle Awareness" >
+            <specific name="Power Usage" > Daily </specific>
+            <specific name="Action Type" > No Action </specific>
+         </Power>
+
+         <Power name="Griffon&apos;s Wrath" >
+            <specific name="Power Usage" > Encounter </specific>
+            <specific name="Action Type" > Standard Action </specific>
+            <Weapon name="Unarmed" >
+               <AttackBonus> 24 </AttackBonus>
+               <Damage> 2d4+9 </Damage>
+               <AttackStat> Strength </AttackStat>
+               <Defense> AC </Defense>
+               <HitComponents> +9 Strength modifier.
++15 half your level.
+
+               </HitComponents>
+               <DamageComponents> +9 Strength modifier.
+
+               </DamageComponents>
+               <Conditions> +1 Racial bonus to attack rolls when you&apos;re bloodied - Dragonborn Fury.               </Conditions>
+            </Weapon>
+         </Power>
+
+         <Power name="Thicket of Blades" >
+            <specific name="Power Usage" > Daily </specific>
+            <specific name="Action Type" > Standard Action </specific>
+            <Weapon name="Unarmed" >
+               <AttackBonus> 24 </AttackBonus>
+               <Damage> 3d4+9 </Damage>
+               <AttackStat> Strength </AttackStat>
+               <Defense> AC </Defense>
+               <HitComponents> +9 Strength modifier.
++15 half your level.
+
+               </HitComponents>
+               <DamageComponents> +9 Strength modifier.
+
+               </DamageComponents>
+               <Conditions> +1 Racial bonus to attack rolls when you&apos;re bloodied - Dragonborn Fury.               </Conditions>
+            </Weapon>
+         </Power>
+
+         <Power name="Last Ditch Evasion" >
+            <specific name="Power Usage" > Daily </specific>
+            <specific name="Action Type" > Immediate Interrupt </specific>
+         </Power>
+
+         <Power name="Little Bait" >
+            <specific name="Power Usage" > Encounter </specific>
+            <specific name="Action Type" > Standard Action </specific>
+            <Weapon name="Unarmed" >
+               <AttackBonus> 24 </AttackBonus>
+               <Damage> 2d4+9 </Damage>
+               <AttackStat> Strength </AttackStat>
+               <Defense> Reflex </Defense>
+               <HitComponents> +9 Strength modifier.
++15 half your level.
+
+               </HitComponents>
+               <DamageComponents> +9 Strength modifier.
+
+               </DamageComponents>
+               <Conditions> +1 Racial bonus to attack rolls when you&apos;re bloodied - Dragonborn Fury.               </Conditions>
+            </Weapon>
+         </Power>
+
+         <Power name="Ride the Giant Down" >
+            <specific name="Power Usage" > Daily </specific>
+            <specific name="Action Type" > Move Action </specific>
+         </Power>
+
+         <Power name="Strength From Pain" >
+            <specific name="Power Usage" > Daily </specific>
+            <specific name="Action Type" > Minor Action </specific>
+         </Power>
+
+         <Power name="Giantslayer&apos;s Strike" >
+            <specific name="Power Usage" > Daily </specific>
+            <specific name="Action Type" > Standard Action </specific>
+            <Weapon name="Unarmed" >
+               <AttackBonus> 24 </AttackBonus>
+               <Damage> 4d4+9 </Damage>
+               <AttackStat> Strength </AttackStat>
+               <Defense> AC </Defense>
+               <HitComponents> +9 Strength modifier.
++15 half your level.
+
+               </HitComponents>
+               <DamageComponents> +9 Strength modifier.
+
+               </DamageComponents>
+               <Conditions> +1 Racial bonus to attack rolls when you&apos;re bloodied - Dragonborn Fury.               </Conditions>
+            </Weapon>
+         </Power>
+
+         <Power name="Strength Against Strength" >
+            <specific name="Power Usage" > Encounter </specific>
+            <specific name="Action Type" > Free Action </specific>
+         </Power>
+
+         <Power name="Reality Distortion" >
+            <specific name="Power Usage" > Daily </specific>
+            <specific name="Action Type" > Standard Action </specific>
+         </Power>
+
+         <Power name="Blinding Cut" >
+            <specific name="Power Usage" > Encounter </specific>
+            <specific name="Action Type" > Standard Action </specific>
+         </Power>
+
+         <Power name="Catastrophic Flurry" >
+            <specific name="Power Usage" > Daily </specific>
+            <specific name="Action Type" > Standard Action </specific>
+            <Weapon name="Unarmed" >
+               <AttackBonus> 24 </AttackBonus>
+               <Damage> 2d4+9 </Damage>
+               <AttackStat> Strength </AttackStat>
+               <Defense> AC </Defense>
+               <HitComponents> +9 Strength modifier.
++15 half your level.
+
+               </HitComponents>
+               <DamageComponents> +9 Strength modifier.
+
+               </DamageComponents>
+               <Conditions> +1 Racial bonus to attack rolls when you&apos;re bloodied - Dragonborn Fury.               </Conditions>
+            </Weapon>
+         </Power>
+
+      </PowerStats>
+
+
+      <!--
+         The character&apos;s companions
+      -->
+      <Companions>
+      </Companions>
+
+
+      <!--
+         The character&apos;s journal entries
+      -->
+      <Journal>
+      </Journal>
+
+   </CharacterSheet>
+
+   <D20CampaignSetting name="" >
+      <!--
+         Dungeons and Dragons Insider: Character Builder campaign save file
+      -->
+   </D20CampaignSetting>
+
+
+   <!--
+      Level tags are an internal tree of rules elements, see RulesElementTally
+      above for the final list of rules elements,  taking into account
+      retraining, etc.
+   -->
+   <Level>
+      <RulesElement name="1" type="Level" internal-id="ID_INTERNAL_LEVEL_1" charelem="27124ec0" legality="rules-legal" >
+         <RulesElement name="Level1Rules" type="Level1Rules" internal-id="ID_INTERNAL_LEVEL1RULES_LEVEL1RULES" charelem="271253f8" legality="rules-legal" >
+            <RulesElement name="SkillRules" type="Level1Rules" internal-id="ID_INTERNAL_LEVEL1RULES_SKILLRULES" charelem="27121188" legality="rules-legal" >
+               <RulesElement name="Acrobatics" type="Skill" internal-id="ID_FMP_SKILL_1" url="http://www.wizards.com/dndinsider/compendium/skill.aspx?id=1" charelem="27127d28" legality="rules-legal" />
+               <RulesElement name="Arcana" type="Skill" internal-id="ID_FMP_SKILL_2" url="http://www.wizards.com/dndinsider/compendium/skill.aspx?id=2" charelem="2710ea98" legality="rules-legal" />
+               <RulesElement name="Bluff" type="Skill" internal-id="ID_FMP_SKILL_3" url="http://www.wizards.com/dndinsider/compendium/skill.aspx?id=3" charelem="2710e400" legality="rules-legal" />
+               <RulesElement name="Diplomacy" type="Skill" internal-id="ID_FMP_SKILL_6" url="http://www.wizards.com/dndinsider/compendium/skill.aspx?id=6" charelem="27103dc8" legality="rules-legal" />
+               <RulesElement name="Dungeoneering" type="Skill" internal-id="ID_FMP_SKILL_7" url="http://www.wizards.com/dndinsider/compendium/skill.aspx?id=7" charelem="2711ea10" legality="rules-legal" />
+               <RulesElement name="Endurance" type="Skill" internal-id="ID_FMP_SKILL_8" url="http://www.wizards.com/dndinsider/compendium/skill.aspx?id=8" charelem="27101998" legality="rules-legal" />
+               <RulesElement name="Heal" type="Skill" internal-id="ID_FMP_SKILL_9" url="http://www.wizards.com/dndinsider/compendium/skill.aspx?id=9" charelem="271018f0" legality="rules-legal" />
+               <RulesElement name="History" type="Skill" internal-id="ID_FMP_SKILL_11" url="http://www.wizards.com/dndinsider/compendium/skill.aspx?id=11" charelem="270d2fb0" legality="rules-legal" />
+               <RulesElement name="Insight" type="Skill" internal-id="ID_FMP_SKILL_13" url="http://www.wizards.com/dndinsider/compendium/skill.aspx?id=13" charelem="2711d678" legality="rules-legal" />
+               <RulesElement name="Intimidate" type="Skill" internal-id="ID_FMP_SKILL_14" url="http://www.wizards.com/dndinsider/compendium/skill.aspx?id=14" charelem="2712e398" legality="rules-legal" />
+               <RulesElement name="Nature" type="Skill" internal-id="ID_FMP_SKILL_16" url="http://www.wizards.com/dndinsider/compendium/skill.aspx?id=16" charelem="270ecc60" legality="rules-legal" />
+               <RulesElement name="Perception" type="Skill" internal-id="ID_FMP_SKILL_17" url="http://www.wizards.com/dndinsider/compendium/skill.aspx?id=17" charelem="27127a48" legality="rules-legal" />
+               <RulesElement name="Religion" type="Skill" internal-id="ID_FMP_SKILL_18" url="http://www.wizards.com/dndinsider/compendium/skill.aspx?id=18" charelem="2710e570" legality="rules-legal" />
+               <RulesElement name="Stealth" type="Skill" internal-id="ID_FMP_SKILL_20" url="http://www.wizards.com/dndinsider/compendium/skill.aspx?id=20" charelem="27113ae8" legality="rules-legal" />
+               <RulesElement name="Streetwise" type="Skill" internal-id="ID_FMP_SKILL_21" url="http://www.wizards.com/dndinsider/compendium/skill.aspx?id=21" charelem="27115bf0" legality="rules-legal" />
+               <RulesElement name="Thievery" type="Skill" internal-id="ID_FMP_SKILL_23" url="http://www.wizards.com/dndinsider/compendium/skill.aspx?id=23" charelem="27127bb8" legality="rules-legal" />
+               <RulesElement name="Athletics" type="Skill" internal-id="ID_FMP_SKILL_27" url="http://www.wizards.com/dndinsider/compendium/skill.aspx?id=27" charelem="27128bc8" legality="rules-legal" />
+            </RulesElement>
+            <RulesElement name="Heroic" type="Tier" internal-id="ID_INTERNAL_TIER_HEROIC" charelem="2711fe68" legality="rules-legal" />
+            <RulesElement name="Melee Basic Attack" type="Power" internal-id="ID_INTERNAL_POWER_MELEE_BASIC_ATTACK" charelem="271275f8" legality="rules-legal" />
+            <RulesElement name="Ranged Basic Attack" type="Power" internal-id="ID_INTERNAL_POWER_RANGED_BASIC_ATTACK" charelem="27128798" legality="rules-legal" />
+            <RulesElement name="Bull Rush Attack" type="Power" internal-id="ID_INTERNAL_POWER_BULL_RUSH_ATTACK" charelem="2711dc30" legality="rules-legal" />
+            <RulesElement name="Grab Attack" type="Power" internal-id="ID_INTERNAL_POWER_GRAB_ATTACK" charelem="2711fa80" legality="rules-legal" />
+            <RulesElement name="Opportunity Attack" type="Power" internal-id="ID_INTERNAL_POWER_OPPORTUNITY_ATTACK" charelem="2711d720" legality="rules-legal" />
+            <RulesElement name="Second Wind" type="Power" internal-id="ID_KDM_POWER_SECOND_WIND" charelem="271098a0" legality="rules-legal" />
+         </RulesElement>
+         <RulesElement name="DetailsRules" type="Level1Rules" internal-id="ID_INTERNAL_LEVEL1RULES_DETAILSRULES" charelem="27116280" legality="rules-legal" >
+            <RulesElement name="Male" type="Gender" internal-id="ID_INTERNAL_GENDER_MALE" charelem="2710e128" legality="rules-legal" />
+            <RulesElement name="Unaligned" type="Alignment" internal-id="ID_FMP_ALIGNMENT_1" charelem="270f0b90" legality="rules-legal" />
+         </RulesElement>
+         <RulesElement name="Expansion1" type="Level1Rules" internal-id="ID_INTERNAL_LEVEL1RULES_EXPANSION1" charelem="2712bb48" legality="rules-legal" >
+            <RulesElement name="" type="" charelem="2710d0d0" legality="rules-legal" />
+            <RulesElement name="Background Benefit" type="Internal" internal-id="ID_INTERNAL_INTERNAL_BACKGROUND_BENEFIT" charelem="2711ff10" legality="rules-legal" >
+               <RulesElement name="" type="" charelem="27109460" legality="rules-legal" />
+            </RulesElement>
+            <RulesElement name="" type="" charelem="27122330" legality="rules-legal" />
+            <RulesElement name="" type="" charelem="2712d258" legality="rules-legal" />
+            <RulesElement name="" type="" charelem="271230d0" legality="rules-legal" />
+            <RulesElement name="" type="" charelem="270f4e38" legality="rules-legal" />
+            <RulesElement name="" type="" charelem="27112338" legality="rules-legal" />
+         </RulesElement>
+         <RulesElement name="Expansion2" type="Level1Rules" internal-id="ID_INTERNAL_LEVEL1RULES_EXPANSION2" charelem="27122ce0" legality="rules-legal" >
+            <RulesElement name="Samurai" type="Theme" internal-id="ID_FMP_THEME_935" charelem="27107fe0" legality="rules-legal" >
+               <RulesElement name="Level 1 Samurai Feature" type="Class Feature" internal-id="ID_FMP_CLASS_FEATURE_4255" charelem="2710b648" legality="rules-legal" >
+                  <RulesElement name="Iaijutsu" type="Power" internal-id="ID_FMP_POWER_16000" url="http://www.wizards.com/dndinsider/compendium/power.aspx?id=16000" charelem="270ed2d0" legality="rules-legal" />
+               </RulesElement>
+               <RulesElement name="Level 5 Samurai Feature" type="Class Feature" internal-id="ID_FMP_CLASS_FEATURE_4256" charelem="27109178" legality="rules-legal" />
+               <RulesElement name="Level 10 Samurai Feature" type="Class Feature" internal-id="ID_FMP_CLASS_FEATURE_4257" charelem="27112bd8" legality="rules-legal" >
+                  <RulesElement name="Blowgun (Level 10 Samurai Feature)" type="Class Feature" internal-id="ID_INTERNAL_CLASS_FEATURE_SAMURAI_LEVEL_10_FEATURE_(BLOWGUN)" charelem="27120900" legality="rules-legal" />
+               </RulesElement>
+            </RulesElement>
+         </RulesElement>
+         <RulesElement name="Expansion3" type="Level1Rules" internal-id="ID_INTERNAL_LEVEL1RULES_EXPANSION3" charelem="27110030" legality="rules-legal" />
+         <RulesElement name="Expansion4" type="Level1Rules" internal-id="ID_INTERNAL_LEVEL1RULES_EXPANSION4" charelem="2711f538" legality="rules-legal" />
+         <RulesElement name="Expansion5" type="Level1Rules" internal-id="ID_INTERNAL_LEVEL1RULES_EXPANSION5" charelem="27117688" legality="rules-legal" />
+         <RulesElement name="Dragonborn" type="Race" internal-id="ID_FMP_RACE_1" url="http://www.wizards.com/dndinsider/compendium/race.aspx?id=1" charelem="270f6dd0" legality="rules-legal" >
+            <RulesElement name="Dragonborn" type="Grants" internal-id="ID_INTERNAL_GRANTS_DRAGONBORN" charelem="27126910" legality="rules-legal" >
+               <RulesElement name="Medium" type="Size" internal-id="ID_INTERNAL_SIZE_MEDIUM" charelem="271131f0" legality="rules-legal" />
+               <RulesElement name="Normal" type="Vision" internal-id="ID_INTERNAL_VISION_NORMAL" charelem="271059d0" legality="rules-legal" />
+               <RulesElement name="Dragonborn Subrace" type="Racial Trait" internal-id="ID_TIV_RACIAL_TRAIT_DRAGONBORN" charelem="271150c0" legality="rules-legal" >
+                  <RulesElement name="Standard Dragonborn Racial Traits" type="Racial Trait" internal-id="ID_TIV_SUBRACE_3-1" charelem="2710c4d8" legality="rules-legal" >
+                     <RulesElement name="Strength" type="Race Ability Bonus" internal-id="ID_INTERNAL_RACE_ABILITY_BONUS_STRENGTH" charelem="27100aa0" legality="rules-legal" />
+                     <RulesElement name="Charisma" type="Race Ability Bonus" internal-id="ID_INTERNAL_RACE_ABILITY_BONUS_CHARISMA" charelem="270dbfa8" legality="rules-legal" />
+                     <RulesElement name="History Bonus" type="Racial Trait" internal-id="ID_INTERNAL_RACIAL_TRAIT_HISTORY_BONUS" charelem="271109f8" legality="rules-legal" />
+                     <RulesElement name="Intimidate Bonus" type="Racial Trait" internal-id="ID_INTERNAL_RACIAL_TRAIT_INTIMIDATE_BONUS" charelem="27115e30" legality="rules-legal" />
+                     <RulesElement name="Dragonborn Fury" type="Racial Trait" internal-id="ID_FMP_RACIAL_TRAIT_379" charelem="270318e8" legality="rules-legal" />
+                     <RulesElement name="Draconic Heritage" type="Racial Trait" internal-id="ID_FMP_RACIAL_TRAIT_631" charelem="270ff118" legality="rules-legal" />
+                     <RulesElement name="Dragonborn Racial Power" type="Racial Trait" internal-id="ID_FMP_RACIAL_TRAIT_3162" charelem="27127198" legality="rules-legal" >
+                        <RulesElement name="Dragon Breath" type="Racial Trait" internal-id="ID_FMP_RACIAL_TRAIT_6" charelem="27125d98" legality="rules-legal" >
+                           <RulesElement name="Dragon Breath" type="Power" internal-id="ID_FMP_POWER_1448" url="http://www.wizards.com/dndinsider/compendium/power.aspx?id=1448" charelem="27101f18" legality="rules-legal" >
+                              <RulesElement name="Dragon Breath Strength" type="Racial Trait" internal-id="ID_INTERNAL_RACIAL_TRAIT_DRAGON_BREATH_STRENGTH" charelem="27103ae8" legality="rules-legal" />
+                              <RulesElement name="Dragon Breath Lightning" type="Racial Trait" internal-id="ID_INTERNAL_RACIAL_TRAIT_DRAGON_BREATH_LIGHTNING" charelem="270ffc80" legality="rules-legal" />
+                           </RulesElement>
+                        </RulesElement>
+                     </RulesElement>
+                  </RulesElement>
+               </RulesElement>
+               <RulesElement name="Common" type="Language" internal-id="ID_FMP_LANGUAGE_1" charelem="27103c58" legality="rules-legal" />
+               <RulesElement name="Draconic" type="Language" internal-id="ID_FMP_LANGUAGE_2" charelem="2710a400" legality="rules-legal" />
+            </RulesElement>
+         </RulesElement>
+         <RulesElement name="Fighter" type="Class" internal-id="ID_FMP_CLASS_3" url="http://www.wizards.com/dndinsider/compendium/class.aspx?id=3" charelem="271045d8" legality="rules-legal" >
+            <RulesElement name="Fighter" type="Grants" internal-id="ID_INTERNAL_GRANTS_FIGHTER" charelem="270e3390" legality="rules-legal" >
+               <RulesElement name="Defender" type="Role" internal-id="ID_FMP_ROLE_4" charelem="271214b8" legality="rules-legal" />
+               <RulesElement name="Martial" type="Power Source" internal-id="ID_FMP_POWER_SOURCE_1" charelem="27117598" legality="rules-legal" />
+               <RulesElement name="Armor Proficiency (Cloth)" type="Proficiency" internal-id="ID_INTERNAL_PROFICIENCY_ARMOR_PROFICIENCY_(CLOTH)" charelem="27127760" legality="rules-legal" />
+               <RulesElement name="Armor Proficiency (Leather)" type="Proficiency" internal-id="ID_INTERNAL_PROFICIENCY_ARMOR_PROFICIENCY_(LEATHER)" charelem="27115960" legality="rules-legal" />
+               <RulesElement name="Armor Proficiency (Hide)" type="Proficiency" internal-id="ID_INTERNAL_PROFICIENCY_ARMOR_PROFICIENCY_(HIDE)" charelem="2710d900" legality="rules-legal" />
+               <RulesElement name="Armor Proficiency (Chainmail)" type="Proficiency" internal-id="ID_INTERNAL_PROFICIENCY_ARMOR_PROFICIENCY_(CHAINMAIL)" charelem="27031b80" legality="rules-legal" />
+               <RulesElement name="Armor Proficiency (Scale)" type="Proficiency" internal-id="ID_INTERNAL_PROFICIENCY_ARMOR_PROFICIENCY_(SCALE)" charelem="2710db80" legality="rules-legal" />
+               <RulesElement name="Shield Proficiency (Heavy)" type="Proficiency" internal-id="ID_INTERNAL_PROFICIENCY_SHIELD_PROFICIENCY_(HEAVY)" charelem="270f8280" legality="rules-legal" />
+               <RulesElement name="Shield Proficiency (Light)" type="Proficiency" internal-id="ID_INTERNAL_PROFICIENCY_SHIELD_PROFICIENCY_(LIGHT)" charelem="27130e90" legality="rules-legal" >
+                  <RulesElement name="Shield Proficiency (Spiked)" type="Proficiency" internal-id="ID_INTERNAL_PROFICIENCY_SHIELD_PROFICIENCY_(SPIKED)" charelem="27116d48" legality="rules-legal" />
+               </RulesElement>
+               <RulesElement name="Simple Melee" type="Proficiency" internal-id="ID_INTERNAL_PROFICIENCY_SIMPLE_MELEE" charelem="2712bbf0" legality="rules-legal" >
+                  <RulesElement name="Weapon Proficiency (Club)" type="Proficiency" internal-id="ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(CLUB)" charelem="2712be88" legality="rules-legal" />
+                  <RulesElement name="Weapon Proficiency (Dagger)" type="Proficiency" internal-id="ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(DAGGER)" charelem="271164f8" legality="rules-legal" />
+                  <RulesElement name="Weapon Proficiency (Javelin)" type="Proficiency" internal-id="ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(JAVELIN)" charelem="27116ca0" legality="rules-legal" />
+                  <RulesElement name="Weapon Proficiency (Mace)" type="Proficiency" internal-id="ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(MACE)" charelem="2712e2f0" legality="rules-legal" />
+                  <RulesElement name="Weapon Proficiency (Sickle)" type="Proficiency" internal-id="ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(SICKLE)" charelem="2710c310" legality="rules-legal" />
+                  <RulesElement name="Weapon Proficiency (Spear)" type="Proficiency" internal-id="ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(SPEAR)" charelem="2711fbd0" legality="rules-legal" />
+                  <RulesElement name="Weapon Proficiency (Greatclub)" type="Proficiency" internal-id="ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(GREATCLUB)" charelem="27117210" legality="rules-legal" />
+                  <RulesElement name="Weapon Proficiency (Morningstar)" type="Proficiency" internal-id="ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(MORNINGSTAR)" charelem="270efa30" legality="rules-legal" />
+                  <RulesElement name="Weapon Proficiency (Quarterstaff)" type="Proficiency" internal-id="ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(QUARTERSTAFF)" charelem="2711f7e0" legality="rules-legal" />
+                  <RulesElement name="Weapon Proficiency (Scythe)" type="Proficiency" internal-id="ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(SCYTHE)" charelem="27116f40" legality="rules-legal" />
+                  <RulesElement name="Weapon Proficiency (Spiked gauntlet)" type="Proficiency" internal-id="ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(SPIKED_GAUNTLET)" charelem="2711f9d8" legality="rules-legal" />
+                  <RulesElement name="Weapon Proficiency (Claw Fighter Claw)" type="Proficiency" internal-id="ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(CLAW_FIGHTER_CLAW)" charelem="2712dea0" legality="rules-legal" />
+                  <RulesElement name="Weapon Proficiency (Shadowblade)" type="Proficiency" internal-id="ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(SHADOWBLADE)" charelem="2712d998" legality="rules-legal" />
+                  <RulesElement name="Weapon Proficiency (Climbing Claw)" type="Proficiency" internal-id="ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(CLIMBING_CLAW)" charelem="2712d8f0" legality="rules-legal" />
+                  <RulesElement name="Weapon Proficiency (Dragontooth Shield (heroic tier))" type="Proficiency" internal-id="ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(DRAGONTOOTH_SHIELD_(HEROIC_TIER))" charelem="2712b208" legality="rules-legal" />
+                  <RulesElement name="Weapon Proficiency (Fighting Shield (heroic tier))" type="Proficiency" internal-id="ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(FIGHTING_SHIELD_(HEROIC_TIER))" charelem="270f7e00" legality="rules-legal" />
+                  <RulesElement name="Weapon Proficiency (Soul Shield (paragon tier))" type="Proficiency" internal-id="ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(SOUL_SHIELD_(PARAGON_TIER))" charelem="2710a6b0" legality="rules-legal" />
+                  <RulesElement name="Weapon Proficiency (Sun Shield (paragon tier))" type="Proficiency" internal-id="ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(SUN_SHIELD_(PARAGON_TIER))" charelem="270e9cf8" legality="rules-legal" />
+                  <RulesElement name="Weapon Proficiency (Rod of Seven Parts (Weapon))" type="Proficiency" internal-id="ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(ROD_OF_SEVEN_PARTS_(WEAPON))" charelem="27106ae8" legality="rules-legal" />
+                  <RulesElement name="Weapon Proficiency (Talid)" type="Proficiency" internal-id="ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(TALID)" charelem="2711e0c0" legality="rules-legal" />
+                  <RulesElement name="Weapon Proficiency (Wrist Razors)" type="Proficiency" internal-id="ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(WRIST_RAZORS)" charelem="270f6e78" legality="rules-legal" />
+                  <RulesElement name="Weapon Proficiency (Widow&apos;s Knife)" type="Proficiency" internal-id="ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(WIDOW&apos;S_KNIFE)" charelem="2710d220" legality="rules-legal" />
+                  <RulesElement name="Weapon Proficiency (Light Mace)" type="Proficiency" internal-id="ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(LIGHT_MACE)" charelem="27114c68" legality="rules-legal" />
+                  <RulesElement name="Weapon Proficiency (Short Spear)" type="Proficiency" internal-id="ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(SHORT_SPEAR)" charelem="2711f738" legality="rules-legal" />
+               </RulesElement>
+               <RulesElement name="Military Melee" type="Proficiency" internal-id="ID_INTERNAL_PROFICIENCY_MILITARY_MELEE" charelem="2710e2a0" legality="rules-legal" >
+                  <RulesElement name="Weapon Proficiency (Battleaxe)" type="Proficiency" internal-id="ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(BATTLEAXE)" charelem="2712f100" legality="rules-legal" />
+                  <RulesElement name="Weapon Proficiency (Handaxe)" type="Proficiency" internal-id="ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(HANDAXE)" charelem="2710f500" legality="rules-legal" />
+                  <RulesElement name="Weapon Proficiency (Flail)" type="Proficiency" internal-id="ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(FLAIL)" charelem="2711d940" legality="rules-legal" />
+                  <RulesElement name="Weapon Proficiency (Throwing hammer)" type="Proficiency" internal-id="ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(THROWING_HAMMER)" charelem="27108960" legality="rules-legal" />
+                  <RulesElement name="Weapon Proficiency (Warhammer)" type="Proficiency" internal-id="ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(WARHAMMER)" charelem="27130d98" legality="rules-legal" />
+                  <RulesElement name="Weapon Proficiency (War Pick)" type="Proficiency" internal-id="ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(WAR_PICK)" charelem="270c7c98" legality="rules-legal" />
+                  <RulesElement name="Weapon Proficiency (Scimitar)" type="Proficiency" internal-id="ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(SCIMITAR)" charelem="27129548" legality="rules-legal" />
+                  <RulesElement name="Weapon Proficiency (Longsword)" type="Proficiency" internal-id="ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(LONGSWORD)" charelem="27102490" legality="rules-legal" />
+                  <RulesElement name="Weapon Proficiency (Short sword)" type="Proficiency" internal-id="ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(SHORT_SWORD)" charelem="27128640" legality="rules-legal" />
+                  <RulesElement name="Weapon Proficiency (Greataxe)" type="Proficiency" internal-id="ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(GREATAXE)" charelem="27120a50" legality="rules-legal" />
+                  <RulesElement name="Weapon Proficiency (Heavy flail)" type="Proficiency" internal-id="ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(HEAVY_FLAIL)" charelem="27129a18" legality="rules-legal" />
+                  <RulesElement name="Weapon Proficiency (Glaive)" type="Proficiency" internal-id="ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(GLAIVE)" charelem="27112f70" legality="rules-legal" />
+                  <RulesElement name="Weapon Proficiency (Halberd)" type="Proficiency" internal-id="ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(HALBERD)" charelem="27108ac0" legality="rules-legal" />
+                  <RulesElement name="Weapon Proficiency (Maul)" type="Proficiency" internal-id="ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(MAUL)" charelem="2710fed8" legality="rules-legal" />
+                  <RulesElement name="Weapon Proficiency (Longspear)" type="Proficiency" internal-id="ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(LONGSPEAR)" charelem="2711e2d0" legality="rules-legal" />
+                  <RulesElement name="Weapon Proficiency (Greatsword)" type="Proficiency" internal-id="ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(GREATSWORD)" charelem="27129e18" legality="rules-legal" />
+                  <RulesElement name="Weapon Proficiency (Rapier)" type="Proficiency" internal-id="ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(RAPIER)" charelem="270f6310" legality="rules-legal" />
+                  <RulesElement name="Weapon Proficiency (Falchion)" type="Proficiency" internal-id="ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(FALCHION)" charelem="2710acc8" legality="rules-legal" />
+                  <RulesElement name="Weapon Proficiency (Broadsword)" type="Proficiency" internal-id="ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(BROADSWORD)" charelem="2710b468" legality="rules-legal" />
+                  <RulesElement name="Weapon Proficiency (Khopesh)" type="Proficiency" internal-id="ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(KHOPESH)" charelem="27104ee0" legality="rules-legal" />
+                  <RulesElement name="Weapon Proficiency (Light war pick)" type="Proficiency" internal-id="ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(LIGHT_WAR_PICK)" charelem="270f4800" legality="rules-legal" />
+                  <RulesElement name="Weapon Proficiency (Scourge)" type="Proficiency" internal-id="ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(SCOURGE)" charelem="270eb5e8" legality="rules-legal" />
+                  <RulesElement name="Weapon Proficiency (Trident)" type="Proficiency" internal-id="ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(TRIDENT)" charelem="270aa290" legality="rules-legal" />
+                  <RulesElement name="Weapon Proficiency (Heavy war pick)" type="Proficiency" internal-id="ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(HEAVY_WAR_PICK)" charelem="2712b2b0" legality="rules-legal" />
+                  <RulesElement name="Weapon Proficiency (Feral Armor Claw)" type="Proficiency" internal-id="ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(FERAL_ARMOR_CLAW)" charelem="2701f1d0" legality="rules-legal" />
+                  <RulesElement name="Weapon Proficiency (Alhulak)" type="Proficiency" internal-id="ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(ALHULAK)" charelem="270bc998" legality="rules-legal" />
+                  <RulesElement name="Weapon Proficiency (Carrikal)" type="Proficiency" internal-id="ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(CARRIKAL)" charelem="27115d88" legality="rules-legal" />
+                  <RulesElement name="Weapon Proficiency (Trikal)" type="Proficiency" internal-id="ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(TRIKAL)" charelem="2710e9f0" legality="rules-legal" />
+                  <RulesElement name="Weapon Proficiency (Lance)" type="Proficiency" internal-id="ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(LANCE)" charelem="2712b028" legality="rules-legal" />
+                  <RulesElement name="Weapon Proficiency (Pike)" type="Proficiency" internal-id="ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(PIKE)" charelem="2712cee8" legality="rules-legal" />
+               </RulesElement>
+               <RulesElement name="Simple Ranged" type="Proficiency" internal-id="ID_INTERNAL_PROFICIENCY_SIMPLE_RANGED" charelem="2712a238" legality="rules-legal" >
+                  <RulesElement name="Weapon Proficiency (Hand Crossbow)" type="Proficiency" internal-id="ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(HAND_CROSSBOW)" charelem="270f00c0" legality="rules-legal" />
+                  <RulesElement name="Weapon Proficiency (Sling)" type="Proficiency" internal-id="ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(SLING)" charelem="270edc30" legality="rules-legal" />
+                  <RulesElement name="Weapon Proficiency (Crossbow)" type="Proficiency" internal-id="ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(CROSSBOW)" charelem="27103988" legality="rules-legal" />
+                  <RulesElement name="Weapon Proficiency (Repeating crossbow)" type="Proficiency" internal-id="ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(REPEATING_CROSSBOW)" charelem="270f4238" legality="rules-legal" />
+                  <RulesElement name="Weapon Proficiency (Dejada)" type="Proficiency" internal-id="ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(DEJADA)" charelem="270daeb0" legality="rules-legal" />
+               </RulesElement>
+               <RulesElement name="Military Ranged" type="Proficiency" internal-id="ID_INTERNAL_PROFICIENCY_MILITARY_RANGED" charelem="2710c818" legality="rules-legal" >
+                  <RulesElement name="Weapon Proficiency (Shortbow)" type="Proficiency" internal-id="ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(SHORTBOW)" charelem="2711ce38" legality="rules-legal" />
+                  <RulesElement name="Weapon Proficiency (Longbow)" type="Proficiency" internal-id="ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(LONGBOW)" charelem="270d7e58" legality="rules-legal" />
+                  <RulesElement name="Weapon Proficiency (Chatkcha)" type="Proficiency" internal-id="ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(CHATKCHA)" charelem="270f6520" legality="rules-legal" />
+               </RulesElement>
+               <RulesElement name="Combat Challenge" type="Class Feature" internal-id="ID_FMP_CLASS_FEATURE_54" charelem="271310e0" legality="rules-legal" >
+                  <RulesElement name="Combat Challenge" type="Power" internal-id="ID_FMP_POWER_7419" url="http://www.wizards.com/dndinsider/compendium/power.aspx?id=7419" charelem="27104aa8" legality="rules-legal" />
+               </RulesElement>
+               <RulesElement name="Combat Superiority" type="Class Feature" internal-id="ID_FMP_CLASS_FEATURE_401" charelem="27109de0" legality="rules-legal" />
+               <RulesElement name="Fighter Talents" type="Class Feature" internal-id="ID_FMP_CLASS_FEATURE_1064" charelem="2710fe30" legality="rules-legal" >
+                  <RulesElement name="Two-handed Weapon Talent" type="Class Feature" internal-id="ID_FMP_CLASS_FEATURE_1063" charelem="2712f260" legality="rules-legal" />
+               </RulesElement>
+               <RulesElement name="Fighter Implements" type="Grants" internal-id="ID_INTERNAL_GRANTS_FIGHTER_IMPLEMENTS" charelem="27106e78" legality="rules-legal" />
+            </RulesElement>
+            <RulesElement name="Cleave" type="Power" internal-id="ID_FMP_POWER_992" url="http://www.wizards.com/dndinsider/compendium/power.aspx?id=992" charelem="27122ef8" legality="rules-legal" />
+            <RulesElement name="Reaping Strike" type="Power" internal-id="ID_FMP_POWER_997" url="http://www.wizards.com/dndinsider/compendium/power.aspx?id=997" charelem="27108cc0" legality="rules-legal" />
+            <RulesElement name="Great Weapon Fighter" type="Build" internal-id="ID_FMP_BUILD_1" charelem="2711cfa0" legality="rules-legal" >
+               <RulesElement name="Great Weapon Fighter" type="Build Suggestions" internal-id="ID_INTERNAL_BUILD_SUGGESTIONS_GREAT_WEAPON_FIGHTER" charelem="27129970" legality="rules-legal" />
+            </RulesElement>
+            <RulesElement name="Heal" type="Skill Training" internal-id="ID_INTERNAL_SKILL_TRAINING_HEAL" charelem="271221e0" legality="rules-legal" />
+            <RulesElement name="Athletics" type="Skill Training" internal-id="ID_INTERNAL_SKILL_TRAINING_ATHLETICS" charelem="27127478" legality="rules-legal" />
+            <RulesElement name="Intimidate" type="Skill Training" internal-id="ID_INTERNAL_SKILL_TRAINING_INTIMIDATE" charelem="271288f8" legality="rules-legal" />
+         </RulesElement>
+         <RulesElement name="Weapon Expertise (Heavy Blade)" type="Feat" internal-id="ID_INTERNAL_FEAT_WEAPON_EXPERTISE_(HEAVY_BLADE)" charelem="271237a0" legality="rules-legal" />
+         <RulesElement name="Spinning Sweep" type="Power" internal-id="ID_FMP_POWER_1004" url="http://www.wizards.com/dndinsider/compendium/power.aspx?id=1004" charelem="27127318" legality="rules-legal" />
+         <RulesElement name="Brute Strike" type="Power" internal-id="ID_FMP_POWER_1524" url="http://www.wizards.com/dndinsider/compendium/power.aspx?id=1524" charelem="271284c8" legality="rules-legal" />
+         <RulesElement name="Kossuth" type="Deity" internal-id="ID_FMP_DEITY_51" charelem="2711ecc8" legality="rules-legal" />
+      </RulesElement>
+   </Level>
+   <Level>
+      <RulesElement name="2" type="Level" internal-id="ID_INTERNAL_LEVEL_2" charelem="27121b70" legality="rules-legal" >
+         <RulesElement name="Weapon Focus (Heavy Blade)" type="Feat" internal-id="ID_INTERNAL_FEAT_WEAPON_FOCUS_(HEAVY_BLADE)" charelem="2711d898" legality="rules-legal" />
+         <RulesElement name="Boundless Endurance" type="Power" internal-id="ID_FMP_POWER_1522" url="http://www.wizards.com/dndinsider/compendium/power.aspx?id=1522" charelem="27101e70" legality="rules-legal" />
+         <RulesElement name="" type="" charelem="271219f8" legality="rules-legal" />
+      </RulesElement>
+   </Level>
+   <Level>
+      <RulesElement name="3" type="Level" internal-id="ID_INTERNAL_LEVEL_3" charelem="27109e88" legality="rules-legal" >
+         <RulesElement name="Dance of Steel" type="Power" internal-id="ID_FMP_POWER_200" url="http://www.wizards.com/dndinsider/compendium/power.aspx?id=200" charelem="271062a8" legality="rules-legal" />
+         <RulesElement name="" type="" charelem="27106350" legality="rules-legal" />
+      </RulesElement>
+   </Level>
+   <Level>
+      <RulesElement name="4" type="Level" internal-id="ID_INTERNAL_LEVEL_4" charelem="27104ba0" legality="rules-legal" >
+         <RulesElement name="Toughness" type="Feat" internal-id="ID_FMP_FEAT_171" url="http://www.wizards.com/dndinsider/compendium/feat.aspx?id=171" charelem="271005e8" legality="rules-legal" />
+         <RulesElement name="Strength" type="Ability Increase (Level 4)" internal-id="ID_INTERNAL_ABILITY_INCREASE_(LEVEL_4)_STRENGTH" charelem="2711ee80" legality="rules-legal" />
+         <RulesElement name="Constitution" type="Ability Increase (Level 4)" internal-id="ID_INTERNAL_ABILITY_INCREASE_(LEVEL_4)_CONSTITUTION" charelem="270f6660" legality="rules-legal" />
+         <RulesElement name="" type="" charelem="27110430" legality="rules-legal" />
+      </RulesElement>
+   </Level>
+   <Level>
+      <RulesElement name="5" type="Level" internal-id="ID_INTERNAL_LEVEL_5" charelem="271049b8" legality="rules-legal" >
+         <RulesElement name="Dizzying Blow" type="Power" internal-id="ID_FMP_POWER_1434" url="http://www.wizards.com/dndinsider/compendium/power.aspx?id=1434" charelem="2712f838" legality="rules-legal" />
+         <RulesElement name="" type="" charelem="270eda98" legality="rules-legal" />
+      </RulesElement>
+   </Level>
+   <Level>
+      <RulesElement name="6" type="Level" internal-id="ID_INTERNAL_LEVEL_6" charelem="27114f30" legality="rules-legal" >
+         <RulesElement name="Disciple of Strength" type="Feat" internal-id="ID_FMP_FEAT_3135" url="http://www.wizards.com/dndinsider/compendium/feat.aspx?id=3135" charelem="2710ee00" legality="rules-legal" />
+         <RulesElement name="Battle Awareness" type="Power" internal-id="ID_FMP_POWER_1440" url="http://www.wizards.com/dndinsider/compendium/power.aspx?id=1440" charelem="271255d0" legality="rules-legal" />
+         <RulesElement name="" type="" charelem="27122490" legality="rules-legal" />
+      </RulesElement>
+   </Level>
+   <Level>
+      <RulesElement name="7" type="Level" internal-id="ID_INTERNAL_LEVEL_7" charelem="27102d28" legality="rules-legal" >
+         <RulesElement name="Griffon&apos;s Wrath" type="Power" internal-id="ID_FMP_POWER_608" url="http://www.wizards.com/dndinsider/compendium/power.aspx?id=608" charelem="27122538" legality="rules-legal" />
+         <RulesElement name="" type="" charelem="2710cca0" legality="rules-legal" />
+      </RulesElement>
+   </Level>
+   <Level>
+      <RulesElement name="8" type="Level" internal-id="ID_INTERNAL_LEVEL_8" charelem="2711e380" legality="rules-legal" >
+         <RulesElement name="Disciple of Destruction" type="Feat" internal-id="ID_FMP_FEAT_3682" url="http://www.wizards.com/dndinsider/compendium/feat.aspx?id=3682" charelem="271229d8" legality="rules-legal" />
+         <RulesElement name="Strength" type="Ability Increase (Level 8)" internal-id="ID_INTERNAL_ABILITY_INCREASE_(LEVEL_8)_STRENGTH" charelem="2712b768" legality="rules-legal" />
+         <RulesElement name="Constitution" type="Ability Increase (Level 8)" internal-id="ID_INTERNAL_ABILITY_INCREASE_(LEVEL_8)_CONSTITUTION" charelem="2712bfe8" legality="rules-legal" />
+         <RulesElement name="" type="" charelem="2710c588" legality="rules-legal" />
+      </RulesElement>
+   </Level>
+   <Level>
+      <RulesElement name="9" type="Level" internal-id="ID_INTERNAL_LEVEL_9" charelem="271118e0" legality="rules-legal" >
+         <RulesElement name="Thicket of Blades" type="Power" internal-id="ID_FMP_POWER_1092" url="http://www.wizards.com/dndinsider/compendium/power.aspx?id=1092" charelem="27129b58" legality="rules-legal" />
+         <RulesElement name="" type="" charelem="27121f00" legality="rules-legal" />
+      </RulesElement>
+   </Level>
+   <Level>
+      <RulesElement name="10" type="Level" internal-id="ID_INTERNAL_LEVEL_10" charelem="270dcbf0" legality="rules-legal" >
+         <RulesElement name="Dragonborn Channeling" type="Feat" internal-id="ID_FMP_FEAT_2408" url="http://www.wizards.com/dndinsider/compendium/feat.aspx?id=2408" charelem="27124f70" legality="rules-legal" />
+         <RulesElement name="Last Ditch Evasion" type="Power" internal-id="ID_FMP_POWER_1443" url="http://www.wizards.com/dndinsider/compendium/power.aspx?id=1443" charelem="271291a0" legality="rules-legal" />
+         <RulesElement name="" type="" charelem="2711e010" legality="rules-legal" />
+      </RulesElement>
+   </Level>
+   <Level>
+      <RulesElement name="11" type="Level" internal-id="ID_INTERNAL_LEVEL_11" charelem="271328c8" legality="rules-legal" >
+         <RulesElement name="Paragon" type="Tier" internal-id="ID_INTERNAL_TIER_PARAGON" charelem="27129d70" legality="rules-legal" />
+         <RulesElement name="Armor Proficiency: Plate" type="Feat" internal-id="ID_FMP_FEAT_114" url="http://www.wizards.com/dndinsider/compendium/feat.aspx?id=114" charelem="27125f08" legality="rules-legal" >
+            <RulesElement name="Armor Proficiency (Plate)" type="Proficiency" internal-id="ID_INTERNAL_PROFICIENCY_ARMOR_PROFICIENCY_(PLATE)" charelem="2712e660" legality="rules-legal" />
+         </RulesElement>
+         <RulesElement name="Giantslayer" type="Paragon Path" internal-id="ID_FMP_PARAGON_PATH_173" url="http://www.wizards.com/dndinsider/compendium/paragonpath.aspx?id=173" charelem="27129038" legality="rules-legal" >
+            <RulesElement name="Giant-Slaying Action" type="Class Feature" internal-id="ID_FMP_CLASS_FEATURE_923" charelem="270effd0" legality="rules-legal" />
+            <RulesElement name="Through the Fingers" type="Class Feature" internal-id="ID_FMP_CLASS_FEATURE_924" charelem="2710cb40" legality="rules-legal" />
+            <RulesElement name="Small Targets" type="Class Feature" internal-id="ID_FMP_CLASS_FEATURE_925" charelem="271187e0" legality="rules-legal" />
+            <RulesElement name="Little Bait" type="Power" internal-id="ID_FMP_POWER_4691" url="http://www.wizards.com/dndinsider/compendium/power.aspx?id=4691" charelem="27104758" legality="rules-legal" />
+            <RulesElement name="Ride the Giant Down" type="Power" internal-id="ID_FMP_POWER_4692" url="http://www.wizards.com/dndinsider/compendium/power.aspx?id=4692" charelem="27104398" legality="rules-legal" />
+            <RulesElement name="Giantslayer&apos;s Strike" type="Power" internal-id="ID_FMP_POWER_4693" url="http://www.wizards.com/dndinsider/compendium/power.aspx?id=4693" charelem="27110db0" legality="rules-legal" />
+         </RulesElement>
+         <RulesElement name="" type="" charelem="27113c38" legality="rules-legal" />
+      </RulesElement>
+   </Level>
+   <Level>
+      <RulesElement name="12" type="Level" internal-id="ID_INTERNAL_LEVEL_12" charelem="2710ff80" legality="rules-legal" >
+         <RulesElement name="Undeniable Crusader" type="Feat" internal-id="ID_FMP_FEAT_1732" url="http://www.wizards.com/dndinsider/compendium/feat.aspx?id=1732" charelem="27108340" legality="rules-legal" />
+         <RulesElement name="" type="" charelem="27130960" legality="rules-legal" />
+      </RulesElement>
+   </Level>
+   <Level>
+      <RulesElement name="13" type="Level" internal-id="ID_INTERNAL_LEVEL_13" charelem="27130f80" legality="rules-legal" >
+         <RulesElement name="Appalling Crunch" type="Power" internal-id="ID_FMP_POWER_1983" url="http://www.wizards.com/dndinsider/compendium/power.aspx?id=1983" charelem="2712e490" replaces="27127318" legality="rules-legal" >
+         </RulesElement>
+         <RulesElement name="" type="" charelem="27111048" legality="rules-legal" />
+      </RulesElement>
+   </Level>
+   <Level>
+      <RulesElement name="14" type="Level" internal-id="ID_INTERNAL_LEVEL_14" charelem="27113530" legality="rules-legal" >
+         <RulesElement name="Spectral Step" type="Feat" internal-id="ID_FMP_FEAT_3575" url="http://www.wizards.com/dndinsider/compendium/feat.aspx?id=3575" charelem="27132680" legality="rules-legal" />
+         <RulesElement name="Strength" type="Ability Increase (Level 14)" internal-id="ID_INTERNAL_ABILITY_INCREASE_(LEVEL_14)_STRENGTH" charelem="2712f6e8" legality="rules-legal" />
+         <RulesElement name="Constitution" type="Ability Increase (Level 14)" internal-id="ID_INTERNAL_ABILITY_INCREASE_(LEVEL_14)_CONSTITUTION" charelem="27131490" legality="rules-legal" />
+         <RulesElement name="" type="" charelem="2712b558" legality="rules-legal" />
+      </RulesElement>
+   </Level>
+   <Level>
+      <RulesElement name="15" type="Level" internal-id="ID_INTERNAL_LEVEL_15" charelem="2712f1a8" legality="rules-legal" >
+         <RulesElement name="Dragon&apos;s Fangs" type="Power" internal-id="ID_FMP_POWER_1101" url="http://www.wizards.com/dndinsider/compendium/power.aspx?id=1101" charelem="271257c8" replaces="271284c8" legality="rules-legal" >
+         </RulesElement>
+         <RulesElement name="" type="" charelem="2712ed10" legality="rules-legal" />
+      </RulesElement>
+   </Level>
+   <Level>
+      <RulesElement name="16" type="Level" internal-id="ID_INTERNAL_LEVEL_16" charelem="271145e8" legality="rules-legal" >
+         <RulesElement name="Strike and Shove" type="Feat" internal-id="ID_FMP_FEAT_2623" url="http://www.wizards.com/dndinsider/compendium/feat.aspx?id=2623" charelem="27125060" legality="rules-legal" />
+         <RulesElement name="Strength From Pain" type="Power" internal-id="ID_FMP_POWER_4335" url="http://www.wizards.com/dndinsider/compendium/power.aspx?id=4335" charelem="27124cd0" legality="rules-legal" />
+         <RulesElement name="" type="" charelem="27131828" legality="rules-legal" />
+      </RulesElement>
+   </Level>
+   <Level>
+      <RulesElement name="17" type="Level" internal-id="ID_INTERNAL_LEVEL_17" charelem="2710dd98" legality="rules-legal" >
+         <RulesElement name="Bitter Harvest" type="Power" internal-id="ID_FMP_POWER_10004" url="http://www.wizards.com/dndinsider/compendium/power.aspx?id=10004" charelem="270eac80" replaces="2712e490" legality="rules-legal" >
+         </RulesElement>
+         <RulesElement name="" type="" charelem="270f9698" legality="rules-legal" />
+      </RulesElement>
+   </Level>
+   <Level>
+      <RulesElement name="18" type="Level" internal-id="ID_INTERNAL_LEVEL_18" charelem="2710c6d8" legality="rules-legal" >
+         <RulesElement name="Hunting Spear Student" type="Feat" internal-id="ID_FMP_FEAT_2339" url="http://www.wizards.com/dndinsider/compendium/feat.aspx?id=2339" charelem="27129248" legality="rules-legal" />
+         <RulesElement name="Strength" type="Ability Increase (Level 18)" internal-id="ID_INTERNAL_ABILITY_INCREASE_(LEVEL_18)_STRENGTH" charelem="27111988" legality="rules-legal" />
+         <RulesElement name="Constitution" type="Ability Increase (Level 18)" internal-id="ID_INTERNAL_ABILITY_INCREASE_(LEVEL_18)_CONSTITUTION" charelem="271220a8" legality="rules-legal" />
+         <RulesElement name="" type="" charelem="27121890" legality="rules-legal" />
+      </RulesElement>
+   </Level>
+   <Level>
+      <RulesElement name="19" type="Level" internal-id="ID_INTERNAL_LEVEL_19" charelem="271225e0" legality="rules-legal" >
+         <RulesElement name="Protective Sweep" type="Power" internal-id="ID_FMP_POWER_4349" url="http://www.wizards.com/dndinsider/compendium/power.aspx?id=4349" charelem="27121d90" replaces="271257c8" legality="rules-legal" >
+         </RulesElement>
+         <RulesElement name="" type="" charelem="27120148" legality="rules-legal" />
+      </RulesElement>
+   </Level>
+   <Level>
+      <RulesElement name="20" type="Level" internal-id="ID_INTERNAL_LEVEL_20" charelem="27115a08" legality="rules-legal" >
+         <RulesElement name="Thunder Hammer" type="Feat" internal-id="ID_FMP_FEAT_364" url="http://www.wizards.com/dndinsider/compendium/feat.aspx?id=364" charelem="2710d9a8" legality="rules-legal" />
+         <RulesElement name="" type="" charelem="27107890" legality="rules-legal" />
+      </RulesElement>
+   </Level>
+   <Level>
+      <RulesElement name="21" type="Level" internal-id="ID_INTERNAL_LEVEL_21" charelem="2711cee0" legality="rules-legal" >
+         <RulesElement name="Epic" type="Tier" internal-id="ID_INTERNAL_TIER_EPIC" charelem="27115ce0" legality="rules-legal" />
+         <RulesElement name="Strength Through Challenge" type="Feat" internal-id="ID_FMP_FEAT_2965" url="http://www.wizards.com/dndinsider/compendium/feat.aspx?id=2965" charelem="271074b0" legality="rules-legal" />
+         <RulesElement name="Keybearer" type="Epic Destiny" internal-id="ID_FMP_EPIC_DESTINY_297" url="http://www.wizards.com/dndinsider/compendium/epicdestiny.aspx?id=297" charelem="271321a8" legality="rules-legal" >
+            <RulesElement name="Portal Mastery" type="Class Feature" internal-id="ID_FMP_CLASS_FEATURE_1329" charelem="27131a48" legality="rules-legal" />
+            <RulesElement name="Traveler&apos;s Tricks" type="Class Feature" internal-id="ID_FMP_CLASS_FEATURE_1330" charelem="27131c48" legality="rules-legal" />
+            <RulesElement name="Unfettered Passage" type="Class Feature" internal-id="ID_FMP_CLASS_FEATURE_1331" charelem="27124360" legality="rules-legal" />
+            <RulesElement name="Reality Distortion" type="Power" internal-id="ID_FMP_POWER_6600" url="http://www.wizards.com/dndinsider/compendium/power.aspx?id=6600" charelem="270fa0a0" legality="rules-legal" />
+         </RulesElement>
+         <RulesElement name="" type="" charelem="2712eed0" legality="rules-legal" />
+      </RulesElement>
+   </Level>
+   <Level>
+      <RulesElement name="22" type="Level" internal-id="ID_INTERNAL_LEVEL_22" charelem="2712d830" legality="rules-legal" >
+         <RulesElement name="Blindfighting Sentinel" type="Feat" internal-id="ID_FMP_FEAT_3516" url="http://www.wizards.com/dndinsider/compendium/feat.aspx?id=3516" charelem="2711de00" legality="rules-legal" />
+         <RulesElement name="Strength Against Strength" type="Power" internal-id="ID_FMP_POWER_13692" url="http://www.wizards.com/dndinsider/compendium/power.aspx?id=13692" charelem="27108b68" legality="rules-legal" />
+         <RulesElement name="" type="" charelem="2712e8e0" legality="rules-legal" />
+      </RulesElement>
+   </Level>
+   <Level>
+      <RulesElement name="23" type="Level" internal-id="ID_INTERNAL_LEVEL_23" charelem="2710ba78" legality="rules-legal" >
+         <RulesElement name="Meticulous Stab" type="Power" internal-id="ID_FMP_POWER_4354" url="http://www.wizards.com/dndinsider/compendium/power.aspx?id=4354" charelem="2710c3b8" replaces="270eac80" legality="rules-legal" >
+         </RulesElement>
+         <RulesElement name="" type="" charelem="27108ec8" legality="rules-legal" />
+      </RulesElement>
+   </Level>
+   <Level>
+      <RulesElement name="24" type="Level" internal-id="ID_INTERNAL_LEVEL_24" charelem="271293e0" legality="rules-legal" >
+         <RulesElement name="Ninth Legion Student" type="Feat" internal-id="ID_FMP_FEAT_1317" url="http://www.wizards.com/dndinsider/compendium/feat.aspx?id=1317" charelem="27128ea8" legality="rules-legal" />
+         <RulesElement name="Strength" type="Ability Increase (Level 24)" internal-id="ID_INTERNAL_ABILITY_INCREASE_(LEVEL_24)_STRENGTH" charelem="27127fe8" legality="rules-legal" />
+         <RulesElement name="Constitution" type="Ability Increase (Level 24)" internal-id="ID_INTERNAL_ABILITY_INCREASE_(LEVEL_24)_CONSTITUTION" charelem="2710fb60" legality="rules-legal" />
+         <RulesElement name="" type="" charelem="2711e890" legality="rules-legal" />
+      </RulesElement>
+   </Level>
+   <Level>
+      <RulesElement name="25" type="Level" internal-id="ID_INTERNAL_LEVEL_25" charelem="27129ca8" legality="rules-legal" >
+         <RulesElement name="Storm&apos;s Fury Strike" type="Power" internal-id="ID_FMP_POWER_9370" url="http://www.wizards.com/dndinsider/compendium/power.aspx?id=9370" charelem="270f6188" replaces="27121d90" legality="rules-legal" >
+         </RulesElement>
+         <RulesElement name="" type="" charelem="27127e88" legality="rules-legal" />
+      </RulesElement>
+   </Level>
+   <Level>
+      <RulesElement name="26" type="Level" internal-id="ID_INTERNAL_LEVEL_26" charelem="27132970" legality="rules-legal" >
+         <RulesElement name="Furtive Signals" type="Feat" internal-id="ID_FMP_FEAT_1270" url="http://www.wizards.com/dndinsider/compendium/feat.aspx?id=1270" charelem="27112c80" legality="rules-legal" />
+         <RulesElement name="" type="" charelem="27111d20" legality="rules-legal" />
+      </RulesElement>
+   </Level>
+   <Level>
+      <RulesElement name="27" type="Level" internal-id="ID_INTERNAL_LEVEL_27" charelem="271270d0" legality="rules-legal" >
+         <RulesElement name="Blinding Cut" type="Power" internal-id="ID_FMP_POWER_10557" url="http://www.wizards.com/dndinsider/compendium/power.aspx?id=10557" charelem="2712e838" replaces="2710c3b8" legality="rules-legal" >
+         </RulesElement>
+         <RulesElement name="" type="" charelem="2710bbd8" legality="rules-legal" />
+      </RulesElement>
+   </Level>
+   <Level>
+      <RulesElement name="28" type="Level" internal-id="ID_INTERNAL_LEVEL_28" charelem="27127240" legality="rules-legal" >
+         <RulesElement name="Formation Fighting" type="Feat" internal-id="ID_FMP_FEAT_2418" url="http://www.wizards.com/dndinsider/compendium/feat.aspx?id=2418" charelem="2711e5b0" legality="rules-legal" />
+         <RulesElement name="Strength" type="Ability Increase (Level 28)" internal-id="ID_INTERNAL_ABILITY_INCREASE_(LEVEL_28)_STRENGTH" charelem="2710a608" legality="rules-legal" />
+         <RulesElement name="Constitution" type="Ability Increase (Level 28)" internal-id="ID_INTERNAL_ABILITY_INCREASE_(LEVEL_28)_CONSTITUTION" charelem="271156b8" legality="rules-legal" />
+         <RulesElement name="" type="" charelem="27128188" legality="rules-legal" />
+      </RulesElement>
+   </Level>
+   <Level>
+      <RulesElement name="29" type="Level" internal-id="ID_INTERNAL_LEVEL_29" charelem="27122e20" legality="rules-legal" >
+         <RulesElement name="Catastrophic Flurry" type="Power" internal-id="ID_FMP_POWER_4365" url="http://www.wizards.com/dndinsider/compendium/power.aspx?id=4365" charelem="2710e888" replaces="270f6188" legality="rules-legal" >
+         </RulesElement>
+         <RulesElement name="" type="" charelem="271120a0" legality="rules-legal" />
+      </RulesElement>
+   </Level>
+   <Level>
+      <RulesElement name="30" type="Level" internal-id="ID_INTERNAL_LEVEL_30" charelem="2712c420" legality="rules-legal" >
+         <RulesElement name="Polearm Expertise" type="Feat" internal-id="ID_FMP_FEAT_3611" url="http://www.wizards.com/dndinsider/compendium/feat.aspx?id=3611" charelem="27129c00" legality="rules-legal" />
+         <RulesElement name="" type="" charelem="27120468" legality="rules-legal" />
+      </RulesElement>
+   </Level>
+
+
+   <!--
+      Textstrings are builder variables and contain entered text data, such
+      as character names, as well as internal data
+   -->
+   <textstring name="_PER_LEVEL_1_Carried Money" >
+      100 gp
+   </textstring>
+   <textstring name="_PER_LEVEL_1_Stored Money" >
+      0 gp
+   </textstring>
+   <textstring name="_PER_LEVEL_1_Residuum" >
+      0
+   </textstring>
+   <textstring name="_PER_LEVEL_2_Carried Money" >
+      100 gp
+   </textstring>
+   <textstring name="_PER_LEVEL_2_Stored Money" >
+      0 gp
+   </textstring>
+   <textstring name="_PER_LEVEL_2_Residuum" >
+      0
+   </textstring>
+   <textstring name="_PER_LEVEL_3_Carried Money" >
+      100 gp
+   </textstring>
+   <textstring name="_PER_LEVEL_3_Stored Money" >
+      0 gp
+   </textstring>
+   <textstring name="_PER_LEVEL_3_Residuum" >
+      0
+   </textstring>
+   <textstring name="_PER_LEVEL_4_Carried Money" >
+      100 gp
+   </textstring>
+   <textstring name="_PER_LEVEL_4_Stored Money" >
+      0 gp
+   </textstring>
+   <textstring name="_PER_LEVEL_4_Residuum" >
+      0
+   </textstring>
+   <textstring name="_PER_LEVEL_5_Carried Money" >
+      100 gp
+   </textstring>
+   <textstring name="_PER_LEVEL_5_Stored Money" >
+      0 gp
+   </textstring>
+   <textstring name="_PER_LEVEL_5_Residuum" >
+      0
+   </textstring>
+   <textstring name="_PER_LEVEL_6_Carried Money" >
+      100 gp
+   </textstring>
+   <textstring name="_PER_LEVEL_6_Stored Money" >
+      0 gp
+   </textstring>
+   <textstring name="_PER_LEVEL_6_Residuum" >
+      0
+   </textstring>
+   <textstring name="_PER_LEVEL_7_Carried Money" >
+      100 gp
+   </textstring>
+   <textstring name="_PER_LEVEL_7_Stored Money" >
+      0 gp
+   </textstring>
+   <textstring name="_PER_LEVEL_7_Residuum" >
+      0
+   </textstring>
+   <textstring name="_PER_LEVEL_8_Carried Money" >
+      100 gp
+   </textstring>
+   <textstring name="_PER_LEVEL_8_Stored Money" >
+      0 gp
+   </textstring>
+   <textstring name="_PER_LEVEL_8_Residuum" >
+      0
+   </textstring>
+   <textstring name="_PER_LEVEL_9_Carried Money" >
+      100 gp
+   </textstring>
+   <textstring name="_PER_LEVEL_9_Stored Money" >
+      0 gp
+   </textstring>
+   <textstring name="_PER_LEVEL_9_Residuum" >
+      0
+   </textstring>
+   <textstring name="_PER_LEVEL_10_Carried Money" >
+      100 gp
+   </textstring>
+   <textstring name="_PER_LEVEL_10_Stored Money" >
+      0 gp
+   </textstring>
+   <textstring name="_PER_LEVEL_10_Residuum" >
+      0
+   </textstring>
+   <textstring name="_PER_LEVEL_11_Carried Money" >
+      100 gp
+   </textstring>
+   <textstring name="_PER_LEVEL_11_Stored Money" >
+      0 gp
+   </textstring>
+   <textstring name="_PER_LEVEL_11_Residuum" >
+      0
+   </textstring>
+   <textstring name="_PER_LEVEL_12_Carried Money" >
+      100 gp
+   </textstring>
+   <textstring name="_PER_LEVEL_12_Stored Money" >
+      0 gp
+   </textstring>
+   <textstring name="_PER_LEVEL_12_Residuum" >
+      0
+   </textstring>
+   <textstring name="_PER_LEVEL_13_Carried Money" >
+      100 gp
+   </textstring>
+   <textstring name="_PER_LEVEL_13_Stored Money" >
+      0 gp
+   </textstring>
+   <textstring name="_PER_LEVEL_13_Residuum" >
+      0
+   </textstring>
+   <textstring name="_PER_LEVEL_14_Carried Money" >
+      100 gp
+   </textstring>
+   <textstring name="_PER_LEVEL_14_Stored Money" >
+      0 gp
+   </textstring>
+   <textstring name="_PER_LEVEL_14_Residuum" >
+      0
+   </textstring>
+   <textstring name="_PER_LEVEL_15_Carried Money" >
+      100 gp
+   </textstring>
+   <textstring name="_PER_LEVEL_15_Stored Money" >
+      0 gp
+   </textstring>
+   <textstring name="_PER_LEVEL_15_Residuum" >
+      0
+   </textstring>
+   <textstring name="_PER_LEVEL_16_Carried Money" >
+      100 gp
+   </textstring>
+   <textstring name="_PER_LEVEL_16_Stored Money" >
+      0 gp
+   </textstring>
+   <textstring name="_PER_LEVEL_16_Residuum" >
+      0
+   </textstring>
+   <textstring name="_PER_LEVEL_17_Carried Money" >
+      100 gp
+   </textstring>
+   <textstring name="_PER_LEVEL_17_Stored Money" >
+      0 gp
+   </textstring>
+   <textstring name="_PER_LEVEL_17_Residuum" >
+      0
+   </textstring>
+   <textstring name="_PER_LEVEL_18_Carried Money" >
+      100 gp
+   </textstring>
+   <textstring name="_PER_LEVEL_18_Stored Money" >
+      0 gp
+   </textstring>
+   <textstring name="_PER_LEVEL_18_Residuum" >
+      0
+   </textstring>
+   <textstring name="_PER_LEVEL_19_Carried Money" >
+      100 gp
+   </textstring>
+   <textstring name="_PER_LEVEL_19_Stored Money" >
+      0 gp
+   </textstring>
+   <textstring name="_PER_LEVEL_19_Residuum" >
+      0
+   </textstring>
+   <textstring name="_PER_LEVEL_20_Carried Money" >
+      100 gp
+   </textstring>
+   <textstring name="_PER_LEVEL_20_Stored Money" >
+      0 gp
+   </textstring>
+   <textstring name="_PER_LEVEL_20_Residuum" >
+      0
+   </textstring>
+   <textstring name="_PER_LEVEL_21_Carried Money" >
+      100 gp
+   </textstring>
+   <textstring name="_PER_LEVEL_21_Stored Money" >
+      0 gp
+   </textstring>
+   <textstring name="_PER_LEVEL_21_Residuum" >
+      0
+   </textstring>
+   <textstring name="_PER_LEVEL_22_Carried Money" >
+      100 gp
+   </textstring>
+   <textstring name="_PER_LEVEL_22_Stored Money" >
+      0 gp
+   </textstring>
+   <textstring name="_PER_LEVEL_22_Residuum" >
+      0
+   </textstring>
+   <textstring name="_PER_LEVEL_23_Carried Money" >
+      100 gp
+   </textstring>
+   <textstring name="_PER_LEVEL_23_Stored Money" >
+      0 gp
+   </textstring>
+   <textstring name="_PER_LEVEL_23_Residuum" >
+      0
+   </textstring>
+   <textstring name="_PER_LEVEL_24_Carried Money" >
+      100 gp
+   </textstring>
+   <textstring name="_PER_LEVEL_24_Stored Money" >
+      0 gp
+   </textstring>
+   <textstring name="_PER_LEVEL_24_Residuum" >
+      0
+   </textstring>
+   <textstring name="_PER_LEVEL_25_Carried Money" >
+      100 gp
+   </textstring>
+   <textstring name="_PER_LEVEL_25_Stored Money" >
+      0 gp
+   </textstring>
+   <textstring name="_PER_LEVEL_25_Residuum" >
+      0
+   </textstring>
+   <textstring name="_PER_LEVEL_26_Carried Money" >
+      100 gp
+   </textstring>
+   <textstring name="_PER_LEVEL_26_Stored Money" >
+      0 gp
+   </textstring>
+   <textstring name="_PER_LEVEL_26_Residuum" >
+      0
+   </textstring>
+   <textstring name="_PER_LEVEL_27_Carried Money" >
+      100 gp
+   </textstring>
+   <textstring name="_PER_LEVEL_27_Stored Money" >
+      0 gp
+   </textstring>
+   <textstring name="_PER_LEVEL_27_Residuum" >
+      0
+   </textstring>
+   <textstring name="_PER_LEVEL_28_Carried Money" >
+      100 gp
+   </textstring>
+   <textstring name="_PER_LEVEL_28_Stored Money" >
+      0 gp
+   </textstring>
+   <textstring name="_PER_LEVEL_28_Residuum" >
+      0
+   </textstring>
+   <textstring name="_PER_LEVEL_29_Carried Money" >
+      100 gp
+   </textstring>
+   <textstring name="_PER_LEVEL_29_Stored Money" >
+      0 gp
+   </textstring>
+   <textstring name="_PER_LEVEL_29_Residuum" >
+      0
+   </textstring>
+   <textstring name="_PER_LEVEL_30_Carried Money" >
+      100 gp
+   </textstring>
+   <textstring name="_PER_LEVEL_30_Stored Money" >
+      0 gp
+   </textstring>
+   <textstring name="_PER_LEVEL_30_Residuum" >
+      0
+   </textstring>
+   <textstring name="Experience Points" >
+      1000000
+   </textstring>
+   <textstring name="Name" >
+      Arjhan
+   </textstring>
+   <textstring name="Character Save File" >
+      D:\Documents\ddi\Saved Characters\test30fight.dnd4e
+   </textstring>
+   <textstring name="Height" >
+      6&apos;2&quot;
+   </textstring>
+   <textstring name="Weight" >
+      250
+   </textstring>
+   <textstring name="Age" >
+      22
+   </textstring>
+
+
+</D20Character>
